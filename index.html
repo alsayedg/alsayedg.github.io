@@ -809,7 +809,7 @@
 
         <div class="catalog-grid">
             <a href="bricks.html" class="catalog-card">
-                <img src="brick1.jpg" alt="Kiln Bricks">
+                <img src="bricks1.jpg" alt="Kiln Bricks">
                 <div class="catalog-info">
                     <h3>Bricks</h3>
                     <span>View Inventory &rarr;</span>
@@ -817,7 +817,7 @@
             </a>
 
             <a href="cement.html" class="catalog-card">
-                <img src="project3.jpg" alt="Cement Bags">
+                <img src="cement1.jpg" alt="Cement Bags">
                 <div class="catalog-info">
                     <h3>Cement</h3>
                     <span>View Inventory &rarr;</span>
@@ -825,7 +825,7 @@
             </a>
 
             <a href="generalsupply.html" class="catalog-card">
-                <img src="project3.jpg" alt="Steel Bars">
+                <img src="generalsupply1.jpg" alt="Steel Bars">
                 <div class="catalog-info">
                     <h3>Steel</h3>
                     <span>View Inventory &rarr;</span>
@@ -841,7 +841,7 @@
             </a>
 
             <a href="generalsupply.html" class="catalog-card">
-                <img src="background.jpg" alt="Blocks and Pipes">
+                <img src="generalsupply2.jpg" alt="Blocks and Pipes">
                 <div class="catalog-info">
                     <h3>Blocks & Pipes</h3>
                     <span>View Inventory &rarr;</span>
@@ -909,7 +909,7 @@
 
         <div class="project-grid">
             <div class="project-card">
-                <img src="brick1.jpg" alt="High-grade brick delivery">
+                <img src="Brick1.jpg" alt="High-grade brick delivery">
                 <div class="project-info">
                     <h3>Premium Brick Stack Delivery</h3>
                     <p>First-class kiln bricks unloaded securely for a residential structure in Islamabad.</p>
@@ -927,7 +927,7 @@
             </div>
 
             <div class="project-card">
-                <img src="project3.jpg" alt="Bulk cement and material supply">
+                <img src="cement1.jpg" alt="Bulk cement and material supply">
                 <div class="project-info">
                     <h3>Bulk Cement Provisioning</h3>
                     <p>Fresh stock distribution coordinated seamlessly for twin-city construction clients.</p>
@@ -1062,7 +1062,7 @@
                 steel: steelTons + " Tons",
                 sand: sandCft.toLocaleString() + " CFT",
                 crush: crushCft.toLocaleString() + " CFT",
-                summary: `${marlaSize} Marla, ${floors} Floor(s) ~ Bricks:${bricks.toLocaleString()}, Cement: ${cement} bags, Steel:${steelTons} tons`
+                summary: `${marlaSize} Marla, ${floors} Floor(s) ~ Bricks: ${bricks.toLocaleString()}, Cement: ${cement} bags, Steel: ${steelTons} tons`
             };
 
             document.getElementById('resBricks').innerText = lastCalculation.bricks;
@@ -1089,7 +1089,7 @@
             const quantity = document.getElementById('quantity').value;
             const area = document.getElementById('deliveryArea').value;
 
-            // Your direct email setup (replace marwatzeeshan316@gmail.com email if needed)
+            // Updated owner email setup with your email address
             const ownerEmail = "marwatzeeshan316@gmail.com";
             const emailSubject = encodeURIComponent(`New Material Order / Quote Request from ${name}`);
             const emailBody = encodeURIComponent(
@@ -1097,4 +1097,37 @@
                 `Client Name: ${name}\n` +
                 `Phone Number: ${phone}\n` +
                 `Material Needed: ${material}\n` +
-                `Quantity / Units: ${quantity}\n
+                `Quantity / Units: ${quantity}\n` +
+                `Delivery Area: ${area}\n\nPlease reach out to the customer as soon as possible.`
+            );
+
+            // Trigger mailto client so you receive an instant email notification
+            window.location.href = `mailto:${ownerEmail}?subject=${emailSubject}&body=${emailBody}`;
+
+            alert(`Thank you, ${name}! Your request has been compiled. Please hit 'Send' on your email app window to dispatch your order details directly to marwatzeeshan316@gmail.com.`);
+            event.target.reset();
+        }
+
+        function searchWebsite() { 
+            let query = document.getElementById('searchInput').value.toLowerCase(); 
+            if(query.includes('brick')) { 
+                window.location.href = 'bricks.html'; 
+            } else if(query.includes('cement')) { 
+                window.location.href = 'cement.html'; 
+            } else if(query.includes('sand')) { 
+                window.location.href = 'sand.html'; 
+            } else if(query.includes('crush')) { 
+                window.location.href = 'crush.html'; 
+            } else if(query.includes('steel')) { 
+                window.location.href = 'generalsupply.html'; 
+            } else if(query.includes('project')) { 
+                window.location.href = 'ourprojects.html'; 
+            } else if(query.includes('contact')) { 
+                window.location.href = 'contactus.html'; 
+            } else { 
+                alert('Please type a material name like bricks, cement, steel, sand, or crush.'); 
+            } 
+        } 
+    </script> 
+</body> 
+</html>
