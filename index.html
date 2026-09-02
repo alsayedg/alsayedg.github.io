@@ -1089,10 +1089,10 @@
             const quantity = document.getElementById('quantity').value;
             const area = document.getElementById('deliveryArea').value;
 
-            // Updated owner email setup with your email address
-            const ownerEmail = "marwatzeeshan316@gmail.com";
-            const emailSubject = encodeURIComponent(`New Material Order / Quote Request from ${name}`);
-            const emailBody = encodeURIComponent(
+            // Updated owner gmail setup with your gmail address
+            const ownergmail = "marwatzeeshan316@gmail.com";
+            const gmailSubject = encodeURIComponent(`New Material Order / Quote Request from ${name}`);
+            const gmailBody = encodeURIComponent(
                 `Hello Al-Sayed Team,\n\nYou have received a new order inquiry from your website:\n\n` +
                 `Client Name: ${name}\n` +
                 `Phone Number: ${phone}\n` +
@@ -1102,7 +1102,7 @@
             );
 
             // Trigger mailto client so you receive an instant email notification
-            window.location.href = `mailto:${ownerEmail}?subject=${emailSubject}&body=${emailBody}`;
+            window.location.href = `mailto:${ownergmail}?subject=${gmailSubject}&body=${gmailBody}`;
 
             alert(`Thank you, ${name}! Your request has been compiled. Please hit 'Send' on your email app window to dispatch your order details directly to marwatzeeshan316@gmail.com.`);
             event.target.reset();
