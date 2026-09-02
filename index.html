@@ -809,7 +809,7 @@
 
         <div class="catalog-grid">
             <a href="bricks.html" class="catalog-card">
-                <img src="bricks1.jpg" alt="Kiln Bricks">
+                <img src="brick1.jpg" alt="Kiln Bricks">
                 <div class="catalog-info">
                     <h3>Bricks</h3>
                     <span>View Inventory &rarr;</span>
@@ -817,7 +817,7 @@
             </a>
 
             <a href="cement.html" class="catalog-card">
-                <img src="cement1.jpg" alt="Cement Bags">
+                <img src="project3.jpg" alt="Cement Bags">
                 <div class="catalog-info">
                     <h3>Cement</h3>
                     <span>View Inventory &rarr;</span>
@@ -909,7 +909,7 @@
 
         <div class="project-grid">
             <div class="project-card">
-                <img src="Brick1.jpg" alt="High-grade brick delivery">
+                <img src="brick1.jpg" alt="High-grade brick delivery">
                 <div class="project-info">
                     <h3>Premium Brick Stack Delivery</h3>
                     <p>First-class kiln bricks unloaded securely for a residential structure in Islamabad.</p>
@@ -927,7 +927,7 @@
             </div>
 
             <div class="project-card">
-                <img src="cement1.jpg" alt="Bulk cement and material supply">
+                <img src="project3.jpg" alt="Bulk cement and material supply">
                 <div class="project-info">
                     <h3>Bulk Cement Provisioning</h3>
                     <p>Fresh stock distribution coordinated seamlessly for twin-city construction clients.</p>
@@ -1023,4 +1023,78 @@
             <div class="footer-col">
                 <h3>Contact Support</h3>
                 <p><strong>Phone / WhatsApp:</strong><br>+92 310 9871812</p>
-                <p style="margin-top: 10px;"><strong>Working Hours:</strong><br>24/7
+                <p style="margin-top: 10px;"><strong>Working Hours:</strong><br>Mon - Sat: 8:00 AM - 7:00 PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Al-Sayed Building Materials, Islamabad. All rights reserved.</p>
+        </div>
+    </footer> 
+ 
+    <script> 
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // Estimator Logic
+        let lastCalculation = {};
+
+        function calculateMaterials() {
+            const plotSizeInput = document.getElementById('plotSize');
+            const floorsSelect = document.getElementById('floorsCount');
+            
+            const marlaSize = parseFloat(plotSizeInput.value) || 5;
+            const floors = parseInt(floorsSelect.value) || 2;
+
+            const sqFtPerMarla = 225; 
+            const totalBuiltUpArea = marlaSize * sqFtPerMarla * floors;
+
+            const bricks = Math.round(totalBuiltUpArea * 10);
+            const cement = Math.round(totalBuiltUpArea * 0.45);
+            const steelTons = parseFloat((totalBuiltUpArea * 0.0035).toFixed(2));
+            const sandCft = Math.round(totalBuiltUpArea * 2.8);
+            const crushCft = Math.round(totalBuiltUpArea * 1.8);
+
+            lastCalculation = {
+                bricks: bricks.toLocaleString(),
+                cement: cement.toLocaleString() + " Bags",
+                steel: steelTons + " Tons",
+                sand: sandCft.toLocaleString() + " CFT",
+                crush: crushCft.toLocaleString() + " CFT",
+                summary: `${marlaSize} Marla, ${floors} Floor(s) ~ Bricks:${bricks.toLocaleString()}, Cement: ${cement} bags, Steel:${steelTons} tons`
+            };
+
+            document.getElementById('resBricks').innerText = lastCalculation.bricks;
+            document.getElementById('resCement').innerText = lastCalculation.cement;
+            document.getElementById('resSteel').innerText = lastCalculation.steel;
+            document.getElementById('resSand').innerText = lastCalculation.sand;
+            document.getElementById('resCrush').innerText = lastCalculation.crush;
+
+            document.getElementById('estimatorResults').style.display = 'block';
+        }
+
+        function transferEstimateToQuote() {
+            document.getElementById('materialNeeded').value = "Complete Package (All Materials)";
+            document.getElementById('quantity').value = lastCalculation.summary || "Estimated Package";
+            document.getElementById('quoteSection').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function handleQuoteSubmit(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('fullName').value;
+            const phone = document.getElementById('phoneNumber').value;
+            const material = document.getElementById('materialNeeded').value;
+            const quantity = document.getElementById('quantity').value;
+            const area = document.getElementById('deliveryArea').value;
+
+            // Your direct email setup (replace marwatzeeshan316@gmail.com email if needed)
+            const ownerEmail = "marwatzeeshan316@gmail.com";
+            const emailSubject = encodeURIComponent(`New Material Order / Quote Request from ${name}`);
+            const emailBody = encodeURIComponent(
+                `Hello Al-Sayed Team,\n\nYou have received a new order inquiry from your website:\n\n` +
+                `Client Name: ${name}\n` +
+                `Phone Number: ${phone}\n` +
+                `Material Needed: ${material}\n` +
+                `Quantity / Units: ${quantity}\n
