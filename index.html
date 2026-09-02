@@ -825,7 +825,7 @@
             </a>
 
             <a href="generalsupply.html" class="catalog-card">
-                <img src="generalsupply1.jpg" alt="Steel Bars">
+                <img src="generalsupply3.jpg" alt="Steel Bars">
                 <div class="catalog-info">
                     <h3>Steel</h3>
                     <span>View Inventory &rarr;</span>
@@ -841,7 +841,7 @@
             </a>
 
             <a href="generalsupply.html" class="catalog-card">
-                <img src="generalsupply2.jpg" alt="Blocks and Pipes">
+                <img src="generalsupply1.jpg" alt="Blocks and Pipes">
                 <div class="catalog-info">
                     <h3>Blocks & Pipes</h3>
                     <span>View Inventory &rarr;</span>
@@ -972,7 +972,7 @@
                     <label for="deliveryArea">Delivery Area (Islamabad / Rawalpindi)</label>
                     <input type="text" id="deliveryArea" placeholder="e.g., Bahria Town Phase 7, DHA Phase 2" required>
                 </div>
-                <button type="submit" class="btn-submit">Submit Quote Request</button>
+                <button type="submit" class="btn-submit">Submit Quote Request via Gmail</button>
             </form>
         </div>
     </section>
@@ -1023,7 +1023,7 @@
             <div class="footer-col">
                 <h3>Contact Support</h3>
                 <p><strong>Phone / WhatsApp:</strong><br>+92 310 9871812</p>
-                <p style="margin-top: 10px;"><strong>Working Hours:</strong><br>Mon - Sat: 8:00 AM - 7:00 PM</p>
+                <p style="margin-top: 10px;"><strong>Working Hours:</strong><br>
             </div>
         </div>
         <div class="footer-bottom">
@@ -1089,10 +1089,10 @@
             const quantity = document.getElementById('quantity').value;
             const area = document.getElementById('deliveryArea').value;
 
-            // Updated owner gmail setup with your gmail address
-            const ownergmail = "marwatzeeshan316@gmail.com";
-            const gmailSubject = encodeURIComponent(`New Material Order / Quote Request from ${name}`);
-            const gmailBody = encodeURIComponent(
+            // Target Gmail web compose URL directed to your specific Gmail inbox
+            const ownerEmail = "marwatzeeshan316@gmail.com";
+            const emailSubject = encodeURIComponent(`New Material Order / Quote Request from ${name}`);
+            const emailBody = encodeURIComponent(
                 `Hello Al-Sayed Team,\n\nYou have received a new order inquiry from your website:\n\n` +
                 `Client Name: ${name}\n` +
                 `Phone Number: ${phone}\n` +
@@ -1101,10 +1101,11 @@
                 `Delivery Area: ${area}\n\nPlease reach out to the customer as soon as possible.`
             );
 
-            // Trigger mailto client so you receive an instant email notification
-            window.location.href = `mailto:${ownergmail}?subject=${gmailSubject}&body=${gmailBody}`;
+            // Opens Gmail directly in a new browser tab pre-populated with your order details
+            const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${ownerEmail}&su=${emailSubject}&body=${emailBody}`;
+            window.open(gmailUrl, '_blank');
 
-            alert(`Thank you, ${name}! Your request has been compiled. Please hit 'Send' on your email app window to dispatch your order details directly to marwatzeeshan316@gmail.com.`);
+            alert(`Thank you, ${name}! Your order details have been compiled and Gmail has opened in a new tab addressed to marwatzeeshan316@gmail.com. Just click 'Send' to dispatch it!`);
             event.target.reset();
         }
 
