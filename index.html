@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Building Materials Suppliers in Islamabad and Rawalpindi | Al-Sayed</title>
-    <meta name="description" content="Looking for trusted building materials in Islamabad and Rawalpindi? Al-Sayed Building Materials provides bricks, cement, steel, sand, and crush with fast delivery.">
+    <title>Building Materials Suppliers & Estimator in Islamabad | Al-Sayed</title>
+    <meta name="description" content="Looking for trusted building materials in Islamabad and Rawalpindi? Use our estimator for bricks, cement, steel, sand, and crush with fast delivery.">
     
     <style>
         * {
@@ -398,6 +398,16 @@
             color: #ffffff;
         }
 
+        /* Polished Estimator Footnote */
+        .estimator-note {
+            font-size: 0.8rem;
+            color: #94a3b8;
+            font-style: italic;
+            margin-bottom: 15px;
+            border-left: 2px solid #38bdf8;
+            padding-left: 8px;
+        }
+
         .btn-calc {
             width: 100%;
             background: #0284c7;
@@ -630,7 +640,7 @@
             margin-bottom: 12px;
         }
 
-        /* Complete Footer (Service areas, quick links, phone/WhatsApp, tagline) */
+        /* Complete Footer */
         footer {
             background: #020408;
             color: #64748b;
@@ -680,7 +690,6 @@
             font-size: 0.85rem;
         }
 
-        /* Responsive Styles for Mobile Devices */
         @media (max-width: 900px) {
             .menu-toggle {
                 display: flex;
@@ -809,7 +818,7 @@
 
         <div class="catalog-grid">
             <a href="bricks.html" class="catalog-card">
-                <img src="bricks1.jpg" alt="Kiln Bricks">
+                <img src="brick1.jpg" alt="Kiln Bricks">
                 <div class="catalog-info">
                     <h3>Bricks</h3>
                     <span>View Inventory &rarr;</span>
@@ -817,7 +826,7 @@
             </a>
 
             <a href="cement.html" class="catalog-card">
-                <img src="cement1.jpg" alt="Cement Bags">
+                <img src="project3.jpg" alt="Cement Bags">
                 <div class="catalog-info">
                     <h3>Cement</h3>
                     <span>View Inventory &rarr;</span>
@@ -825,7 +834,7 @@
             </a>
 
             <a href="generalsupply.html" class="catalog-card">
-                <img src="generalsupply3.jpg" alt="Steel Bars">
+                <img src="project3.jpg" alt="Steel Bars">
                 <div class="catalog-info">
                     <h3>Steel</h3>
                     <span>View Inventory &rarr;</span>
@@ -841,7 +850,7 @@
             </a>
 
             <a href="generalsupply.html" class="catalog-card">
-                <img src="generalsupply1.jpg" alt="Blocks and Pipes">
+                <img src="background.jpg" alt="Blocks and Pipes">
                 <div class="catalog-info">
                     <h3>Blocks & Pipes</h3>
                     <span>View Inventory &rarr;</span>
@@ -896,6 +905,8 @@
                         <strong id="resCrush">-</strong>
                     </div>
                 </div>
+                <p class="estimator-note">*Estimates based on standard local construction practices and structural ratios for residential usage in Islamabad & Rawalpindi.</p>
+                
                 <button type="button" class="btn-transfer" onclick="transferEstimateToQuote()">Transfer to Quote Request &rarr;</button>
             </div>
         </div>
@@ -909,7 +920,7 @@
 
         <div class="project-grid">
             <div class="project-card">
-                <img src="Brick1.jpg" alt="High-grade brick delivery">
+                <img src="brick1.jpg" alt="High-grade brick delivery">
                 <div class="project-info">
                     <h3>Premium Brick Stack Delivery</h3>
                     <p>First-class kiln bricks unloaded securely for a residential structure in Islamabad.</p>
@@ -927,7 +938,7 @@
             </div>
 
             <div class="project-card">
-                <img src="cement1.jpg" alt="Bulk cement and material supply">
+                <img src="project3.jpg" alt="Bulk cement and material supply">
                 <div class="project-info">
                     <h3>Bulk Cement Provisioning</h3>
                     <p>Fresh stock distribution coordinated seamlessly for twin-city construction clients.</p>
@@ -1023,7 +1034,7 @@
             <div class="footer-col">
                 <h3>Contact Support</h3>
                 <p><strong>Phone / WhatsApp:</strong><br>+92 310 9871812</p>
-                <p style="margin-top: 10px;"><strong>Working Hours:</strong><br>
+                <p style="margin-top: 10px;"><strong>Working Hours:</strong><br>Mon - Sat: 8:00 AM - 7:00 PM</p>
             </div>
         </div>
         <div class="footer-bottom">
@@ -1089,7 +1100,6 @@
             const quantity = document.getElementById('quantity').value;
             const area = document.getElementById('deliveryArea').value;
 
-            // Target Gmail web compose URL directed to your specific Gmail inbox
             const ownerEmail = "marwatzeeshan316@gmail.com";
             const emailSubject = encodeURIComponent(`New Material Order / Quote Request from ${name}`);
             const emailBody = encodeURIComponent(
@@ -1101,7 +1111,6 @@
                 `Delivery Area: ${area}\n\nPlease reach out to the customer as soon as possible.`
             );
 
-            // Opens Gmail directly in a new browser tab pre-populated with your order details
             const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${ownerEmail}&su=${emailSubject}&body=${emailBody}`;
             window.open(gmailUrl, '_blank');
 
