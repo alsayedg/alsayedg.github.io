@@ -1,18 +1,65 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Primary SEO -->
     <title>Bricks Supplier in Islamabad & Rawalpindi | Al-Sayed Building Materials</title>
 
-    <meta name="description" content="Al-Sayed Building Materials supplies quality 4G, 5G and other construction bricks in Islamabad and Rawalpindi. Contact us for brick prices, bulk orders and delivery for construction projects.">
+    <meta name="description" content="Al-Sayed Building Materials supplies construction bricks in Islamabad and Rawalpindi, including 4G, 5G and other brick types. Contact us for current brick prices, bulk orders and delivery.">
 
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
     <link rel="canonical" href="https://alsayedg.github.io/bricks.html">
 
+    <!-- Open Graph / Social Sharing -->
     <meta property="og:title" content="Bricks Supplier in Islamabad & Rawalpindi | Al-Sayed Building Materials">
-    <meta property="og:description" content="Quality construction bricks supplied across Islamabad and Rawalpindi. Explore brick types, prices and delivery options from Al-Sayed Building Materials.">
+    <meta property="og:description" content="Buy construction bricks in Islamabad and Rawalpindi from Al-Sayed Building Materials. Explore brick types, bulk supply and delivery options.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://alsayedg.github.io/bricks.html">
-</head>
+    <meta property="og:image" content="https://alsayedg.github.io/bricks1.jpg">
+    <meta property="og:site_name" content="Al-Sayed Building Materials">
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#080e1a">
+
+    <!-- Structured Data: Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Al-Sayed Building Materials",
+      "description": "Building material supplier providing construction bricks and other building materials in Islamabad and Rawalpindi.",
+      "url": "https://alsayedg.github.io/",
+      "telephone": "+923109871812",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Islamabad"
+        },
+        {
+          "@type": "City",
+          "name": "Rawalpindi"
+        }
+      ],
+      "sameAs": []
+    }
+    </script>
+
+    <!-- Structured Data: Web Page -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Bricks Supplier in Islamabad & Rawalpindi",
+      "url": "https://alsayedg.github.io/bricks.html",
+      "description": "Construction bricks supplied by Al-Sayed Building Materials in Islamabad and Rawalpindi."
+    }
+    </script>
+
     <style>
         * {
             margin: 0;
@@ -21,10 +68,14 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            background-color: #080e1a; 
+            background-color: #080e1a;
             color: #f1f5f9;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         /* Navbar */
@@ -33,7 +84,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 15px 8%;
-            background: rgba(8, 14, 26, 0.95);
+            background: rgba(8, 14, 26, 0.97);
             backdrop-filter: blur(10px);
             position: sticky;
             top: 0;
@@ -60,7 +111,8 @@
             transition: color 0.3s;
         }
 
-        nav a:hover, nav a.active {
+        nav a:hover,
+        nav a.active {
             color: #f97316;
         }
 
@@ -77,12 +129,26 @@
             transform: translateY(-2px);
         }
 
-        /* Page Banner */
+        /* Breadcrumb */
+        .breadcrumb {
+            max-width: 1200px;
+            margin: auto;
+            padding: 18px 8% 0;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        /* Hero */
         .page-banner {
-            padding: 90px 8% 50px 8%;
+            padding: 75px 8% 55px;
             text-align: center;
             background-color: #0b1329;
-            background-image: 
+            background-image:
                 linear-gradient(rgba(11, 19, 41, 0.92), rgba(8, 14, 26, 0.96)),
                 linear-gradient(90deg, rgba(2, 132, 199, 0.04) 1px, transparent 1px),
                 linear-gradient(0deg, rgba(2, 132, 199, 0.04) 1px, transparent 1px);
@@ -92,7 +158,8 @@
 
         .page-banner h1 {
             font-size: 2.6rem;
-            margin-bottom: 15px;
+            line-height: 1.2;
+            margin-bottom: 18px;
             color: #ffffff;
         }
 
@@ -101,15 +168,64 @@
         }
 
         .page-banner p {
-            font-size: 1.1rem;
-            color: #94a3b8;
-            max-width: 750px;
-            margin: 0 auto;
+            font-size: 1.08rem;
+            color: #cbd5e1;
+            max-width: 820px;
+            margin: 0 auto 25px;
         }
 
-        /* Gallery Container */
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .hero-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .hero-btn.primary {
+            background: #25d366;
+            color: white;
+        }
+
+        .hero-btn.secondary {
+            border: 1px solid #0284c7;
+            color: #38bdf8;
+        }
+
+        /* SEO Introduction */
+        .intro-section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 55px 8% 25px;
+        }
+
+        .intro-section h2 {
+            color: #ffffff;
+            font-size: 1.9rem;
+            margin-bottom: 15px;
+        }
+
+        .intro-section h2 span {
+            color: #f97316;
+        }
+
+        .intro-section p {
+            color: #cbd5e1;
+            margin-bottom: 15px;
+        }
+
+        /* Product Gallery */
         .gallery-container {
-            padding: 60px 8%;
+            padding: 40px 8% 60px;
+            max-width: 1400px;
+            margin: auto;
         }
 
         .section-title {
@@ -122,9 +238,9 @@
 
         .photo-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
         }
 
         .photo-card {
@@ -152,7 +268,7 @@
             padding: 22px;
         }
 
-        .photo-info h2 {
+        .photo-info h3 {
             color: #f97316;
             font-size: 1.25rem;
             margin-bottom: 8px;
@@ -163,16 +279,92 @@
             font-size: 0.95rem;
         }
 
-        /* Footer CTA Section */
+        /* Information Sections */
+        .info-section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 30px 8%;
+        }
+
+        .info-box {
+            background: #0d172b;
+            border: 1px solid #1e293b;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 25px;
+        }
+
+        .info-box h2 {
+            color: #ffffff;
+            margin-bottom: 15px;
+            font-size: 1.6rem;
+        }
+
+        .info-box h2 span {
+            color: #f97316;
+        }
+
+        .info-box p {
+            color: #cbd5e1;
+            margin-bottom: 12px;
+        }
+
+        .info-box ul {
+            padding-left: 20px;
+            color: #cbd5e1;
+        }
+
+        .info-box li {
+            margin-bottom: 8px;
+        }
+
+        /* Service Areas */
+        .areas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .area-tag {
+            background: #111e38;
+            border: 1px solid #1e293b;
+            color: #cbd5e1;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* FAQ */
+        .faq-item {
+            border-bottom: 1px solid #1e293b;
+            padding: 18px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item h3 {
+            color: #ffffff;
+            font-size: 1.05rem;
+            margin-bottom: 7px;
+        }
+
+        .faq-item p {
+            margin-bottom: 0;
+        }
+
+        /* CTA */
         .footer-cta {
-            padding: 60px 8%;
+            padding: 65px 8%;
             background: linear-gradient(180deg, #080e1a 0%, #050914 100%);
             text-align: center;
             border-top: 1px solid #1e293b;
         }
 
         .footer-cta h2 {
-            font-size: 1.8rem;
+            font-size: 1.9rem;
             margin-bottom: 10px;
             color: #ffffff;
         }
@@ -180,7 +372,7 @@
         .footer-cta p {
             color: #94a3b8;
             margin-bottom: 25px;
-            max-width: 600px;
+            max-width: 650px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -189,7 +381,7 @@
             display: inline-block;
             background-color: #25d366;
             color: white;
-            padding: 12px 30px;
+            padding: 13px 30px;
             border-radius: 6px;
             text-decoration: none;
             font-weight: bold;
@@ -203,6 +395,7 @@
             transform: translateY(-2px);
         }
 
+        /* Footer */
         footer {
             text-align: center;
             padding: 25px;
@@ -211,134 +404,506 @@
             border-top: 1px solid #1e293b;
             font-size: 0.9rem;
         }
+
+        footer a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            header {
+                padding: 12px 5%;
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 8px;
+            }
+
+            nav a {
+                margin-left: 0;
+                font-size: 0.85rem;
+            }
+
+            .page-banner {
+                padding: 55px 6% 45px;
+            }
+
+            .page-banner h1 {
+                font-size: 2rem;
+            }
+
+            .page-banner p {
+                font-size: 1rem;
+            }
+
+            .photo-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .info-section,
+            .intro-section,
+            .gallery-container {
+                padding-left: 6%;
+                padding-right: 6%;
+            }
+        }
     </style>
 </head>
+
 <body>
 
     <!-- Header -->
     <header>
         <div class="logo-container">
-            <a href="index.html"><img src="logo.png" alt="Al-Sayed Building Materials Logo"></a>
+            <a href="index.html">
+                <img src="logo.png" alt="Al-Sayed Building Materials logo">
+            </a>
         </div>
-        <nav class="nav-links">
+
+        <nav class="nav-links" aria-label="Main navigation">
             <a href="index.html">Home</a>
             <a href="ourprojects.html">Projects</a>
-            <a href="bricks.html" class="active">Bricks</a>
+            <a href="bricks.html" class="active" aria-current="page">Bricks</a>
             <a href="cement.html">Cement</a>
             <a href="sand.html">Sand</a>
             <a href="crush.html">Crush</a>
             <a href="contactus.html">Contact</a>
-            <a href="https://wa.me/923109871812" class="btn-quote-nav" target="_blank">Get Quote</a>
+
+            <a href="https://wa.me/923109871812"
+               class="btn-quote-nav"
+               target="_blank"
+               rel="noopener">
+                Get Quote
+            </a>
         </nav>
     </header>
 
-    <!-- Page Banner -->
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span> › </span>
+        <span>Bricks</span>
+    </div>
+
+    <!-- Hero -->
     <section class="page-banner">
-        <h1>Premium Construction Bricks in <span>Islamabad & Rawalpindi</span></h1>
-        <p>Al-Sayed Building Materials delivers top-tier 4G, 5G, kiln-fired, and structural bricks directly to your construction sites across the twin cities with guaranteed quality and fast delivery.</p>
+        <h1>
+            Bricks Supplier in
+            <span>Islamabad & Rawalpindi</span>
+        </h1>
+
+        <p>
+            Al-Sayed Building Materials supplies construction bricks for
+            residential, commercial and other building projects across
+            Islamabad and Rawalpindi. Contact us for current brick prices,
+            bulk orders and delivery information.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="https://wa.me/923109871812"
+               class="hero-btn primary"
+               target="_blank"
+               rel="noopener">
+                Get Brick Price on WhatsApp
+            </a>
+
+            <a href="#brick-types" class="hero-btn secondary">
+                View Brick Types
+            </a>
+        </div>
     </section>
 
-    <!-- Gallery Grid Section -->
-    <main class="gallery-container">
-        <h2 class="section-title">Our Brick Inventory & Stock Catalog</h2>
-        
+    <!-- SEO Introduction -->
+    <section class="intro-section">
+        <h2>
+            Quality Construction <span>Bricks for Your Project</span>
+        </h2>
+
+        <p>
+            Choosing suitable bricks is an important part of building a
+            strong and durable structure. Al-Sayed Building Materials
+            supplies different types of construction bricks for customers
+            in Islamabad and Rawalpindi.
+        </p>
+
+        <p>
+            Whether you are constructing a house, boundary wall, commercial
+            building or another masonry project, we can help you arrange
+            the required quantity of bricks and coordinate delivery to your
+            construction site.
+        </p>
+
+        <p>
+            Brick prices can change according to market conditions, brick
+            type, quantity and delivery requirements. Contact us for the
+            latest available price and supply information.
+        </p>
+    </section>
+
+    <!-- Brick Gallery -->
+    <main class="gallery-container" id="brick-types">
+
+        <h2 class="section-title">
+            Types of Bricks We Supply
+        </h2>
+
         <div class="photo-grid">
+
             <!-- 1 -->
-            <div class="photo-card">
-                <img src="bricks1.jpg" alt="4G Bricks Stamped Stock">
+            <article class="photo-card">
+                <img
+                    src="bricks1.jpg"
+                    alt="4G construction bricks supplied by Al-Sayed Building Materials"
+                    loading="lazy"
+                >
+
                 <div class="photo-info">
-                    <h2>4G Bricks Stamped Stock</h2>
-                    <p>High-durability kiln-fired bricks featuring clear '4G' mold stamping for superior structural wall bonding.</p>
+                    <h3>4G Bricks</h3>
+                    <p>
+                        Construction bricks suitable for masonry and
+                        general building applications. Contact us for
+                        current availability and prices.
+                    </p>
                 </div>
-            </div>
+            </article>
 
             <!-- 2 -->
-            <div class="photo-card">
-                <img src="bricks8.jpg" alt="5G Bricks Bulk Yard Stock">
+            <article class="photo-card">
+                <img
+                    src="bricks8.jpg"
+                    alt="5G construction bricks in bulk stock"
+                    loading="lazy"
+                >
+
                 <div class="photo-info">
-                    <h2>5G Bricks Bulk Yard Stock</h2>
-                    <p>Premium grade 5G stamped building bricks stacked neatly and ready for immediate site delivery.</p>
+                    <h3>5G Bricks</h3>
+                    <p>
+                        5G bricks available for construction projects
+                        requiring bulk quantities. Ask us about current
+                        stock and delivery options.
+                    </p>
                 </div>
-            </div>
+            </article>
 
             <!-- 3 -->
-            <div class="photo-card">
-                <img src="bricks3.jpg" alt="33-Standard High-Strength Bricks">
+            <article class="photo-card">
+                <img
+                    src="bricks3.jpg"
+                    alt="Standard construction bricks for building projects"
+                    loading="lazy"
+                >
+
                 <div class="photo-info">
-                    <h2>Standard High-Strength Bricks</h2>
-                    <p>Uniform texture and dense composition engineered specifically for robust load-bearing masonry.</p>
+                    <h3>Standard Construction Bricks</h3>
+                    <p>
+                        Standard bricks for walls and general masonry
+                        work in residential and commercial construction.
+                    </p>
                 </div>
-            </div>
+            </article>
 
             <!-- 4 -->
-            <div class="photo-card">
-                <img src="bricks4.jpg" alt="5G Bricks Close-Up Stack">
+            <article class="photo-card">
+                <img
+                    src="bricks4.jpg"
+                    alt="Close-up of 5G construction bricks"
+                    loading="lazy"
+                >
+
                 <div class="photo-info">
-                    <h2>5G Bricks Close-Up Stack</h2>
-                    <p>Detailed view of clean edges and uniform baking guaranteeing minimal breakage and maximum strength.</p>
+                    <h3>5G Brick Stock</h3>
+                    <p>
+                        A close-up view of available brick stock. Contact
+                        us to confirm current supply and pricing.
+                    </p>
                 </div>
-            </div>
+            </article>
 
             <!-- 5 -->
-            <div class="photo-card">
-                <img src="bricks5.jpg" alt="Kiln Yard Brick Inventory">
+            <article class="photo-card">
+                <img
+                    src="bricks5.jpg"
+                    alt="Construction brick stock at a brick yard"
+                    loading="lazy"
+                >
+
                 <div class="photo-info">
-                    <h2>Kiln Yard Brick Inventory</h2>
-                    <p>Extensive yard stock sorted efficiently for rapid heavy-vehicle dispatch to residential and commercial sites.</p>
+                    <h3>Brick Yard Stock</h3>
+                    <p>
+                        Brick stock prepared for construction requirements
+                        and bulk supply orders.
+                    </p>
                 </div>
-            </div>
+            </article>
 
             <!-- 6 -->
-            <div class="photo-card">
-                <img src="Brick1.jpg" alt="Kiln Stack Setting Structure">
+            <article class="photo-card">
+                <img
+                    src="Brick1.jpg"
+                    alt="Kiln-fired bricks arranged at a brick yard"
+                    loading="lazy"
+                >
+
                 <div class="photo-info">
-                    <h2>Kiln Stack Setting Structure</h2>
-                    <p>Professional brick firing and stacking configuration ensuring even heat distribution and consistent baking quality.</p>
+                    <h3>Kiln-Fired Bricks</h3>
+                    <p>
+                        Kiln-fired construction bricks commonly used for
+                        masonry and building projects.
+                    </p>
                 </div>
-            </div>
+            </article>
 
             <!-- 7 -->
-            <div class="photo-card">
-                <img src="bricks7.jpg" alt="PRI Stamped Bricks">
+            <article class="photo-card">
+                <img
+                    src="bricks7.jpg"
+                    alt="PRI stamped construction bricks"
+                    loading="lazy"
+                >
+
                 <div class="photo-info">
-                    <h2>PRI Stamped Bricks</h2>
-                    <p>Specialized 'PRI' branded quality bricks designed for high-end architectural and exposed exterior facades.</p>
+                    <h3>PRI Bricks</h3>
+                    <p>
+                        PRI stamped bricks available for customers looking
+                        for this particular brick type.
+                    </p>
                 </div>
-            </div>
+            </article>
 
             <!-- 8 -->
-            <div class="photo-card">
-                <img src="bricks8.jpg" alt="Heart Pattern Decorative Bricks">
+            <article class="photo-card">
+                <img
+                    src="bricks8.jpg"
+                    alt="Decorative construction bricks with patterned openings"
+                    loading="lazy"
+                >
+
                 <div class="photo-info">
-                    <h2>Heart Pattern Decorative Bricks</h2>
-                    <p>Custom decorative bricks featuring internal heart-shaped cavities for unique interior and exterior architectural styling.</p>
+                    <h3>Decorative Bricks</h3>
+                    <p>
+                        Decorative brick options for selected architectural
+                        and design applications.
+                    </p>
                 </div>
-            </div>
+            </article>
 
             <!-- 9 -->
-            <div class="photo-card">
-                <img src="bricks9.jpg" alt="Diamond Stamp 33 Bricks">
+            <article class="photo-card">
+                <img
+                    src="bricks9.jpg"
+                    alt="Patterned construction bricks for building projects"
+                    loading="lazy"
+                >
+
                 <div class="photo-info">
-                    <h2>Diamond Stamp '5G' Bricks</h2>
-                    <p>Specialty grade bricks featuring a distinct diamond pattern and '33' numbering for specialized construction projects.</p>
+                    <h3>Patterned Bricks</h3>
+                    <p>
+                        Specially patterned brick options for customers
+                        looking for distinctive construction materials.
+                    </p>
                 </div>
-            </div>
+            </article>
+
         </div>
     </main>
 
-    <!-- Footer CTA Section -->
+    <!-- Brick Buying Information -->
+    <section class="info-section">
+
+        <div class="info-box">
+            <h2>Bricks for Residential & Commercial Construction</h2>
+
+            <p>
+                Bricks are widely used for walls, partitions, boundary
+                walls and other masonry applications. The appropriate
+                brick type depends on the project design, construction
+                requirements and the advice of your builder or engineer.
+            </p>
+
+            <p>
+                Al-Sayed Building Materials can help customers arrange
+                brick supplies for construction projects in Islamabad
+                and Rawalpindi.
+            </p>
+        </div>
+
+        <div class="info-box">
+            <h2>Bricks Price in Islamabad & Rawalpindi</h2>
+
+            <p>
+                Brick prices may vary because of market conditions,
+                brick type, order quantity, transportation distance and
+                availability.
+            </p>
+
+            <p>
+                For the latest price, contact Al-Sayed Building Materials
+                directly on WhatsApp. Tell us your required brick type,
+                approximate quantity and delivery location so we can
+                provide relevant information.
+            </p>
+        </div>
+
+        <div class="info-box">
+            <h2>Brick Delivery in Islamabad & Rawalpindi</h2>
+
+            <p>
+                We supply construction bricks for customers in Islamabad
+                and Rawalpindi and can coordinate delivery according to
+                order requirements and location.
+            </p>
+
+            <div class="areas">
+                <span class="area-tag">Islamabad</span>
+                <span class="area-tag">Rawalpindi</span>
+                <span class="area-tag">Gulberg</span>
+                <span class="area-tag">Gulberg Greens</span>
+                <span class="area-tag">Bahria Town</span>
+                <span class="area-tag">DHA</span>
+                <span class="area-tag">Twin Cities</span>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="info-box">
+            <h2>Frequently Asked Questions About Bricks</h2>
+
+            <div class="faq-item">
+                <h3>Where can I buy construction bricks in Islamabad?</h3>
+                <p>
+                    Al-Sayed Building Materials supplies construction
+                    bricks for customers in Islamabad. Contact us for
+                    current brick types, availability and prices.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Do you supply bricks in Rawalpindi?</h3>
+                <p>
+                    Yes. We supply construction bricks for projects in
+                    Rawalpindi and can discuss delivery requirements
+                    according to the order and location.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What types of bricks do you supply?</h3>
+                <p>
+                    Our brick page features different available options,
+                    including 4G, 5G, standard, PRI and selected decorative
+                    or patterned bricks. Availability can change, so
+                    contact us for the latest stock information.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How can I check the current brick price?</h3>
+                <p>
+                    Brick prices can change with market conditions.
+                    Contact us through WhatsApp with your required type,
+                    quantity and delivery location for current pricing
+                    information.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can I order bricks in bulk?</h3>
+                <p>
+                    Yes, customers can contact us regarding bulk brick
+                    requirements for residential and commercial
+                    construction projects.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Internal Product Links -->
+    <section class="info-section">
+
+        <div class="info-box">
+            <h2>Other Building Materials</h2>
+
+            <p>
+                In addition to bricks, explore our other construction
+                material categories:
+            </p>
+
+            <ul>
+                <li>
+                    <a href="cement.html" style="color:#38bdf8;">
+                        Cement Supplier
+                    </a>
+                    – Explore available cement options.
+                </li>
+
+                <li>
+                    <a href="sand.html" style="color:#38bdf8;">
+                        Sand Supplier
+                    </a>
+                    – View our sand supply information.
+                </li>
+
+                <li>
+                    <a href="crush.html" style="color:#38bdf8;">
+                        Crush Supplier
+                    </a>
+                    – Explore construction crush options.
+                </li>
+
+                <li>
+                    <a href="contactus.html" style="color:#38bdf8;">
+                        Contact Al-Sayed Building Materials
+                    </a>
+                    – Ask about prices and availability.
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- CTA -->
     <section class="footer-cta">
-        <h2>Ready to Order Bricks for Your Project?</h2>
-        <p>Contact Al-Sayed Building Materials today for the best current market rates per thousand in Islamabad and Rawalpindi.</p>
-        <a href="https://wa.me/923109871812" class="btn-quote" target="_blank">Get Instant Quote via WhatsApp</a>
+
+        <h2>Need Bricks for Your Construction Project?</h2>
+
+        <p>
+            Contact Al-Sayed Building Materials for current brick prices,
+            availability, bulk orders and delivery information in
+            Islamabad and Rawalpindi.
+        </p>
+
+        <a href="https://wa.me/923109871812"
+           class="btn-quote"
+           target="_blank"
+           rel="noopener">
+            Get Brick Quote on WhatsApp
+        </a>
+
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Al-Sayed Building Materials Suppliers, Islamabad. All rights reserved.</p>
+        <p>
+            &copy; 2026 Al-Sayed Building Materials Suppliers, Islamabad.
+            All rights reserved.
+        </p>
+
+        <p>
+            <a href="index.html">Home</a> |
+            <a href="bricks.html">Bricks</a> |
+            <a href="cement.html">Cement</a> |
+            <a href="sand.html">Sand</a> |
+            <a href="crush.html">Crush</a> |
+            <a href="contactus.html">Contact</a>
+        </p>
     </footer>
 
 </body>
 </html>
-            <a href="crush.html">Crush</a>
-           
+```
