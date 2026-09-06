@@ -2,36 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Building Materials Suppliers & Estimator in Islamabad | Al-Sayed</title>
-    <meta name="description" content="Looking for trusted building materials in Islamabad and Rawalpindi? Use our estimator for bricks, cement, steel, sand, and crush with fast delivery.">
-    
-    <!-- Favicon placed correctly inside the head section -->
+
+    <title>Building Material Supplier in Islamabad & Rawalpindi | Al-Sayed</title>
+
+    <meta name="description" content="Al-Sayed Building Materials supplies bricks, cement, sand, crush and other construction materials in Islamabad and Rawalpindi with reliable delivery for residential and commercial projects.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://alsayedg.github.io/">
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="logo.png">
-</head>
-<style>
-    * {
-        margin:
+    <link rel="apple-touch-icon" href="logo.png">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#060b14">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Building Material Supplier in Islamabad & Rawalpindi | Al-Sayed">
+    <meta property="og:description" content="Bricks, cement, sand, crush and construction material supply across Islamabad and Rawalpindi.">
+    <meta property="og:url" content="https://alsayedg.github.io/">
+    <meta property="og:image" content="https://alsayedg.github.io/logo.png">
+    <meta property="og:site_name" content="Al-Sayed Building Materials">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Al-Sayed Building Materials",
+        "url": "https://alsayedg.github.io/",
+        "logo": "https://alsayedg.github.io/logo.png",
+        "telephone": "+923109871812",
+        "description": "Building material supplier serving Islamabad and Rawalpindi with bricks, cement, sand, crush and other construction materials.",
+        "areaServed": [
+            {
+                "@type": "City",
+                "name": "Islamabad"
+            },
+            {
+                "@type": "City",
+                "name": "Rawalpindi"
+            }
+        ],
+        "sameAs": []
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Al-Sayed Building Materials",
+        "url": "https://alsayedg.github.io/"
+    }
+    </script>
+
+    <style>
+        /* ==============================
+           GLOBAL RESET
+        ============================== */
+
+        * {
+            margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            background-color: #060b14; 
+            background-color: #060b14;
             color: #f1f5f9;
             line-height: 1.6;
-            position: relative;
             min-height: 100vh;
             overflow-x: hidden;
         }
 
-        /* Professional Shop Background Setup */
+        img {
+            max-width: 100%;
+        }
+
+        a {
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        button,
+        input,
+        select,
+        textarea {
+            font: inherit;
+        }
+
+        /* ==============================
+           BACKGROUND
+        ============================== */
+
         #bg-image-overlay {
             position: fixed;
-            top: 0;
-            left: 0;
+            inset: 0;
             width: 100%;
             height: 100%;
             background-image: url('background.jpg');
@@ -40,66 +115,88 @@
             background-repeat: no-repeat;
             filter: brightness(0.35) blur(2px);
             z-index: -3;
+            transform: scale(1.02);
         }
 
-        /* Lighting & Dark Mode Gradient Layer */
         .video-glow {
             position: fixed;
-            top: 0;
-            left: 0;
+            inset: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, rgba(6, 11, 20, 0.95) 0%, rgba(11, 19, 41, 0.90) 100%);
+            background: linear-gradient(
+                135deg,
+                rgba(6, 11, 20, 0.95) 0%,
+                rgba(11, 19, 41, 0.90) 100%
+            );
             z-index: -2;
             pointer-events: none;
         }
 
-        /* Dark background color fallback layer */
         body::before {
             content: "";
             position: fixed;
-            top: 0;
-            left: 0;
+            inset: 0;
             width: 100%;
             height: 100%;
-            background: rgba(6, 11, 20, 0.8);
+            background: rgba(6, 11, 20, 0.78);
             z-index: -1;
+            pointer-events: none;
         }
 
-        /* Navigation Bar with Search Bar & Mobile Hamburger Menu */
+        /* ==============================
+           HEADER / NAVIGATION
+        ============================== */
+
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 12px 5%;
-            background: rgba(6, 11, 20, 0.95);
+            gap: 15px;
+            padding: 10px 5%;
+            background: rgba(6, 11, 20, 0.96);
             backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
             position: sticky;
             top: 0;
             z-index: 1000;
-            border-bottom: 1px solid rgba(2, 132, 199, 0.2);
+            border-bottom: 1px solid rgba(2, 132, 199, 0.25);
+            min-height: 64px;
+        }
+
+        .logo-container {
+            flex-shrink: 0;
+        }
+
+        .logo-container a {
+            display: block;
         }
 
         .logo-container img {
-            height: 40px;
+            height: 42px;
             width: auto;
             display: block;
+            object-fit: contain;
         }
 
         .header-right {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
+            margin-left: auto;
         }
 
-        /* Search Bar Style */
+        /* ==============================
+           SEARCH
+        ============================== */
+
         .search-box {
             display: flex;
             align-items: center;
-            background: rgba(15, 23, 42, 0.8);
+            background: rgba(15, 23, 42, 0.85);
             border: 1px solid #334155;
-            border-radius: 6px;
-            padding: 4px 8px;
+            border-radius: 8px;
+            padding: 4px 6px;
+            min-height: 40px;
         }
 
         .search-box input {
@@ -108,8 +205,8 @@
             color: white;
             outline: none;
             font-size: 0.85rem;
-            padding: 3px;
-            width: 100px;
+            padding: 5px;
+            width: 105px;
         }
 
         .search-box input::placeholder {
@@ -117,50 +214,65 @@
         }
 
         .search-box button {
-            background: transparent;
+            background: #0284c7;
             border: none;
-            color: #0284c7;
+            color: white;
             cursor: pointer;
-            font-weight: bold;
-            font-size: 0.8rem;
+            font-weight: 700;
+            font-size: 0.78rem;
+            padding: 7px 9px;
+            border-radius: 5px;
         }
 
-        /* Navigation Links & Hamburger */
+        .search-box button:hover {
+            background: #0369a1;
+        }
+
+        /* ==============================
+           NAVIGATION
+        ============================== */
+
         .nav-links {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 14px;
         }
 
         nav a {
             color: #cbd5e1;
             text-decoration: none;
             font-weight: 600;
-            font-size: 0.9rem;
-            transition: color 0.3s ease;
+            font-size: 0.88rem;
+            transition: color 0.25s ease;
         }
 
-        nav a:hover, nav a.active {
+        nav a:hover,
+        nav a.active {
             color: #f97316;
         }
 
         .btn-quote-nav {
             background: linear-gradient(135deg, #f97316, #ea580c) !important;
             color: white !important;
-            padding: 8px 14px;
-            border-radius: 6px;
+            padding: 9px 14px;
+            border-radius: 7px;
+            white-space: nowrap;
         }
 
-        /* Mobile Hamburger Toggle Button */
+        /* ==============================
+           MOBILE MENU
+        ============================== */
+
         .menu-toggle {
             display: none;
             flex-direction: column;
             justify-content: space-between;
-            width: 28px;
-            height: 20px;
+            width: 32px;
+            height: 24px;
             background: transparent;
             border: none;
             cursor: pointer;
+            padding: 2px;
             z-index: 1001;
         }
 
@@ -169,25 +281,34 @@
             width: 100%;
             height: 3px;
             background-color: #f1f5f9;
-            border-radius: 2px;
-            transition: all 0.3s ease;
+            border-radius: 3px;
         }
 
-        /* Stronger Hero Section */
+        /* ==============================
+           HERO
+        ============================== */
+
         .hero {
-            padding: 100px 5% 50px 5%;
+            padding: 105px 5% 55px;
             text-align: center;
-            background: linear-gradient(rgba(6, 11, 20, 0.75), rgba(6, 11, 20, 0.85)), url('background.jpg');
+            background:
+                linear-gradient(
+                    rgba(6, 11, 20, 0.74),
+                    rgba(6, 11, 20, 0.88)
+                ),
+                url('background.jpg');
             background-size: cover;
             background-position: center;
             border-bottom: 1px solid rgba(30, 41, 59, 0.6);
         }
 
         .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
+            max-width: 950px;
+            margin: 0 auto 18px;
+            font-size: clamp(2rem, 5vw, 3rem);
             color: #ffffff;
-            line-height: 1.2;
+            line-height: 1.15;
+            letter-spacing: -0.5px;
         }
 
         .hero h1 span {
@@ -195,45 +316,47 @@
         }
 
         .hero p {
+            max-width: 800px;
+            margin: 0 auto 28px;
             font-size: 1.05rem;
-            color: #94a3b8;
-            max-width: 750px;
-            margin: 0 auto 25px auto;
+            color: #cbd5e1;
         }
 
         .hero-buttons {
             display: flex;
             justify-content: center;
+            align-items: center;
             gap: 12px;
             flex-wrap: wrap;
             margin-bottom: 35px;
         }
 
-        .btn-primary {
-            background-color: #f97316;
-            color: white;
-            padding: 12px 24px;
-            border-radius: 6px;
+        .btn-primary,
+        .btn-secondary {
+            min-height: 46px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            padding: 11px 24px;
+            border-radius: 7px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 700;
             font-size: 0.95rem;
-            transition: background 0.3s;
+        }
+
+        .btn-primary {
+            background: #f97316;
+            color: white;
         }
 
         .btn-primary:hover {
-            background-color: #ea580c;
+            background: #ea580c;
         }
 
         .btn-secondary {
-            background-color: transparent;
-            color: #cbd5e1;
-            padding: 12px 24px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 0.95rem;
-            border: 1px solid #334155;
-            transition: border-color 0.3s;
+            background: rgba(15, 23, 42, 0.45);
+            color: #e2e8f0;
+            border: 1px solid #475569;
         }
 
         .btn-secondary:hover {
@@ -241,64 +364,74 @@
             color: white;
         }
 
-        /* Trust Signals / Stat Pills Above The Fold */
+        /* ==============================
+           TRUST PILLS
+        ============================== */
+
         .trust-pills {
             display: flex;
             justify-content: center;
-            gap: 15px;
+            gap: 12px;
             flex-wrap: wrap;
-            max-width: 900px;
+            max-width: 950px;
             margin: 0 auto;
         }
 
         .stat-pill {
-            background: rgba(15, 23, 42, 0.85);
+            background: rgba(15, 23, 42, 0.88);
             border: 1px solid rgba(249, 115, 22, 0.3);
-            padding: 8px 16px;
+            padding: 9px 15px;
             border-radius: 30px;
-            font-size: 0.85rem;
+            font-size: 0.84rem;
             color: #e2e8f0;
             font-weight: 600;
-            backdrop-filter: blur(5px);
         }
 
-        /* Main Content Container & Section Headers */
+        /* ==============================
+           GENERAL SECTIONS
+        ============================== */
+
         .container {
-            padding: 60px 5%;
+            padding: 65px 5%;
         }
 
         .section-header {
             text-align: center;
-            margin-bottom: 35px;
+            max-width: 850px;
+            margin: 0 auto 38px;
         }
 
         .section-header h2 {
-            font-size: 1.9rem;
+            font-size: clamp(1.65rem, 4vw, 2.1rem);
             color: #ffffff;
-            margin-bottom: 8px;
+            margin-bottom: 9px;
+            line-height: 1.25;
         }
 
         .section-header p {
-            font-size: 0.95rem;
+            font-size: 0.96rem;
             color: #94a3b8;
         }
 
-        /* Shop by Category Catalog Grid with Real Product Photos */
+        /* ==============================
+           MATERIAL CATALOG
+        ============================== */
+
         .catalog-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: 20px;
             max-width: 1200px;
             margin: 0 auto;
         }
 
         .catalog-card {
-            background: rgba(17, 24, 39, 0.8);
-            border-radius: 10px;
+            background: rgba(17, 24, 39, 0.86);
+            border-radius: 11px;
             overflow: hidden;
-            border: 1px solid rgba(30, 41, 59, 0.8);
+            border: 1px solid rgba(30, 41, 59, 0.9);
             text-decoration: none;
-            transition: transform 0.3s, border-color 0.3s;
+            transition: transform 0.25s ease, border-color 0.25s ease;
             display: flex;
             flex-direction: column;
         }
@@ -310,32 +443,39 @@
 
         .catalog-card img {
             width: 100%;
-            height: 160px;
+            height: 170px;
             object-fit: cover;
             display: block;
         }
 
         .catalog-info {
-            padding: 18px;
+            padding: 18px 15px;
             text-align: center;
         }
 
         .catalog-info h3 {
             color: #ffffff;
-            font-size: 1.1rem;
+            font-size: 1.12rem;
             margin-bottom: 6px;
         }
 
         .catalog-info span {
             color: #38bdf8;
             font-size: 0.85rem;
-            font-weight: 600;
+            font-weight: 700;
         }
 
-        /* Construction Material Estimator Section */
+        /* ==============================
+           ESTIMATOR
+        ============================== */
+
         .estimator-section {
-            padding: 60px 5%;
-            background: linear-gradient(135deg, rgba(11, 19, 41, 0.7), rgba(6, 11, 20, 0.85));
+            padding: 65px 5%;
+            background: linear-gradient(
+                135deg,
+                rgba(11, 19, 41, 0.72),
+                rgba(6, 11, 20, 0.88)
+            );
             border-top: 1px solid rgba(30, 41, 59, 0.6);
             border-bottom: 1px solid rgba(30, 41, 59, 0.6);
         }
@@ -343,11 +483,12 @@
         .estimator-container {
             max-width: 850px;
             margin: 0 auto;
-            background: rgba(17, 24, 39, 0.9);
+            background: rgba(17, 24, 39, 0.93);
             border: 1px solid rgba(2, 132, 199, 0.3);
             border-radius: 12px;
             padding: 35px 30px;
             backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
         }
 
         .estimator-grid {
@@ -358,7 +499,7 @@
         }
 
         .estimator-results {
-            background: rgba(15, 23, 42, 0.9);
+            background: rgba(15, 23, 42, 0.92);
             border: 1px solid #334155;
             border-radius: 8px;
             padding: 20px;
@@ -376,32 +517,31 @@
 
         .results-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 12px;
             margin-bottom: 15px;
         }
 
         .result-item {
             background: rgba(30, 41, 59, 0.5);
-            padding: 10px 14px;
+            padding: 11px 14px;
             border-radius: 6px;
             border-left: 3px solid #f97316;
         }
 
         .result-item span {
             display: block;
-            font-size: 0.75rem;
+            font-size: 0.72rem;
             color: #94a3b8;
             text-transform: uppercase;
-            font-weight: 600;
+            font-weight: 700;
         }
 
         .result-item strong {
-            font-size: 1.05rem;
+            font-size: 1rem;
             color: #ffffff;
         }
 
-        /* Polished Estimator Footnote */
         .estimator-note {
             font-size: 0.8rem;
             color: #94a3b8;
@@ -416,12 +556,12 @@
             background: #0284c7;
             color: white;
             border: none;
+            min-height: 46px;
             padding: 12px;
-            border-radius: 6px;
-            font-weight: bold;
+            border-radius: 7px;
+            font-weight: 700;
             font-size: 1rem;
             cursor: pointer;
-            transition: background 0.3s;
         }
 
         .btn-calc:hover {
@@ -432,41 +572,42 @@
             background: #22c55e;
             color: white;
             border: none;
+            min-height: 44px;
             padding: 10px 16px;
-            border-radius: 6px;
-            font-weight: bold;
-            font-size: 0.9rem;
+            border-radius: 7px;
+            font-weight: 700;
             cursor: pointer;
-            transition: background 0.3s;
-            display: inline-block;
         }
 
         .btn-transfer:hover {
             background: #16a34a;
         }
 
-        /* Projects Showcase Grid */
+        /* ==============================
+           PROJECT SHOWCASE
+        ============================== */
+
         .projects-showcase {
-            padding: 50px 5%;
-            background: rgba(11, 19, 41, 0.4);
+            padding: 60px 5%;
+            background: rgba(11, 19, 41, 0.42);
             border-top: 1px solid rgba(30, 41, 59, 0.5);
             border-bottom: 1px solid rgba(30, 41, 59, 0.5);
         }
 
         .project-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
             max-width: 1200px;
             margin: 0 auto;
         }
 
         .project-card {
-            background: rgba(17, 24, 39, 0.85);
+            background: rgba(17, 24, 39, 0.88);
             border-radius: 10px;
             overflow: hidden;
             border: 1px solid #1e293b;
-            transition: transform 0.3s, border-color 0.3s;
+            transition: transform 0.25s ease, border-color 0.25s ease;
         }
 
         .project-card:hover {
@@ -476,7 +617,7 @@
 
         .project-card img {
             width: 100%;
-            height: 200px;
+            height: 205px;
             object-fit: cover;
             display: block;
             border-bottom: 1px solid #1e293b;
@@ -489,7 +630,7 @@
         .project-info h3 {
             color: #ffffff;
             font-size: 1.1rem;
-            margin-bottom: 6px;
+            margin-bottom: 7px;
         }
 
         .project-info p {
@@ -501,14 +642,30 @@
         .card-link {
             color: #38bdf8;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 700;
             font-size: 0.9rem;
         }
 
-        /* Quote / Request System Section (Short Form) */
+        .card-link:hover {
+            color: #f97316;
+        }
+
+        .projects-button-wrapper {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* ==============================
+           FORM
+        ============================== */
+
         .quote-section {
-            padding: 60px 5%;
-            background: linear-gradient(135deg, rgba(11, 19, 41, 0.9), rgba(6, 11, 20, 0.95));
+            padding: 65px 5%;
+            background: linear-gradient(
+                135deg,
+                rgba(11, 19, 41, 0.92),
+                rgba(6, 11, 20, 0.96)
+            );
             border-top: 1px solid #1e293b;
             border-bottom: 1px solid #1e293b;
         }
@@ -516,11 +673,10 @@
         .quote-container {
             max-width: 700px;
             margin: 0 auto;
-            background: rgba(17, 24, 39, 0.9);
+            background: rgba(17, 24, 39, 0.92);
             border: 1px solid rgba(249, 115, 22, 0.3);
             padding: 30px 25px;
             border-radius: 12px;
-            backdrop-filter: blur(10px);
         }
 
         .quote-form {
@@ -532,7 +688,7 @@
         .form-group {
             display: flex;
             flex-direction: column;
-            gap: 5px;
+            gap: 6px;
         }
 
         .form-group.full-width {
@@ -542,20 +698,26 @@
         .form-group label {
             font-size: 0.85rem;
             color: #cbd5e1;
-            font-weight: 600;
+            font-weight: 700;
         }
 
-        .form-group input, .form-group select, .form-group textarea {
-            background: rgba(15, 23, 42, 0.8);
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            background: rgba(15, 23, 42, 0.85);
             border: 1px solid #334155;
-            padding: 10px 12px;
-            border-radius: 6px;
+            padding: 11px 12px;
+            border-radius: 7px;
             color: white;
             font-size: 0.9rem;
             outline: none;
+            min-height: 44px;
         }
 
-        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
             border-color: #f97316;
         }
 
@@ -564,29 +726,32 @@
             background: #f97316;
             color: white;
             border: none;
+            min-height: 47px;
             padding: 12px;
-            border-radius: 6px;
-            font-weight: bold;
+            border-radius: 7px;
+            font-weight: 700;
             font-size: 1rem;
             cursor: pointer;
-            transition: background 0.3s;
         }
 
         .btn-submit:hover {
             background: #ea580c;
         }
 
-        /* Actionable Contact Section */
+        /* ==============================
+           CONTACT
+        ============================== */
+
         .contact-action-section {
-            padding: 50px 5%;
+            padding: 55px 5%;
             text-align: center;
         }
 
         .phone-cta-link {
             display: inline-block;
-            font-size: 1.5rem;
+            font-size: clamp(1.25rem, 4vw, 1.55rem);
             color: #38bdf8;
-            font-weight: bold;
+            font-weight: 700;
             text-decoration: none;
             margin-bottom: 15px;
         }
@@ -595,46 +760,31 @@
             color: #f97316;
         }
 
-        /* Floating WhatsApp Button */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 25px;
-            right: 25px;
-            background-color: #25d366;
-            color: white;
-            width: 55px;
-            height: 55px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 30px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            z-index: 999;
-            text-decoration: none;
-            transition: transform 0.3s;
-        }
+        /* ==============================
+           LOCAL SEO
+        ============================== */
 
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-        }
-
-        /* Local SEO Section */
         .local-seo-section {
-            background: rgba(11, 19, 41, 0.6);
-            padding: 50px 5%;
+            background: rgba(11, 19, 41, 0.64);
+            padding: 55px 5%;
             border-top: 1px solid #1e293b;
         }
 
         .local-seo-content {
-            max-width: 850px;
+            max-width: 900px;
             margin: 0 auto;
         }
 
         .local-seo-content h2 {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             color: #ffffff;
-            margin-bottom: 12px;
+            margin-bottom: 15px;
+        }
+
+        .local-seo-content h3 {
+            color: #e2e8f0;
+            font-size: 1.05rem;
+            margin: 22px 0 8px;
         }
 
         .local-seo-content p {
@@ -643,30 +793,67 @@
             margin-bottom: 12px;
         }
 
-        /* Complete Footer */
+        .local-seo-content a {
+            color: #38bdf8;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        /* ==============================
+           WHATSAPP FLOAT
+        ============================== */
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 22px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 29px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+            z-index: 999;
+            text-decoration: none;
+            transition: transform 0.25s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.08);
+        }
+
+        /* ==============================
+           FOOTER
+        ============================== */
+
         footer {
             background: #020408;
             color: #64748b;
-            padding: 50px 5% 20px 5%;
+            padding: 50px 5% 20px;
             border-top: 1px solid rgba(30, 41, 59, 0.6);
         }
 
         .footer-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: 30px;
             max-width: 1200px;
-            margin: 0 auto 30px auto;
+            margin: 0 auto 30px;
         }
 
         .footer-col h3 {
             color: #ffffff;
             font-size: 1.1rem;
             margin-bottom: 15px;
-            font-weight: 600;
+            font-weight: 700;
         }
 
-        .footer-col p, .footer-col ul {
+        .footer-col p,
+        .footer-col ul {
             font-size: 0.9rem;
             color: #94a3b8;
             list-style: none;
@@ -679,7 +866,6 @@
         .footer-col ul li a {
             color: #94a3b8;
             text-decoration: none;
-            transition: color 0.3s;
         }
 
         .footer-col ul li a:hover {
@@ -693,7 +879,47 @@
             font-size: 0.85rem;
         }
 
+        /* ==============================
+           TABLET
+        ============================== */
+
+        @media (max-width: 1050px) {
+
+            .catalog-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .project-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .nav-links {
+                gap: 10px;
+            }
+
+            nav a {
+                font-size: 0.82rem;
+            }
+        }
+
+        /* ==============================
+           MOBILE
+        ============================== */
+
         @media (max-width: 900px) {
+
+            header {
+                padding: 9px 4%;
+            }
+
+            .logo-container img {
+                height: 38px;
+            }
+
             .menu-toggle {
                 display: flex;
             }
@@ -703,48 +929,77 @@
                 top: 100%;
                 left: 0;
                 width: 100%;
-                background: rgba(6, 11, 20, 0.98);
+                background: rgba(6, 11, 20, 0.99);
                 backdrop-filter: blur(15px);
+                -webkit-backdrop-filter: blur(15px);
                 flex-direction: column;
-                align-items: flex-start;
-                padding: 20px 7%;
-                gap: 15px;
-                border-bottom: 1px solid rgba(2, 132, 199, 0.2);
+                align-items: stretch;
+                gap: 0;
+                padding: 0 7%;
                 max-height: 0;
                 overflow: hidden;
-                transition: max-height 0.35s ease-in-out, padding 0.35s ease-in-out;
+                transition: max-height 0.35s ease, padding 0.35s ease;
+                border-bottom: 1px solid rgba(2, 132, 199, 0.25);
             }
 
             .nav-links.active {
-                max-height: 500px;
-                padding: 20px 7%;
+                max-height: 650px;
+                padding: 12px 7% 20px;
             }
 
             nav a {
-                font-size: 1.05rem;
                 width: 100%;
-                padding: 5px 0;
+                padding: 10px 0;
+                font-size: 1rem;
+                border-bottom: 1px solid rgba(51, 65, 85, 0.3);
             }
 
             .btn-quote-nav {
-                width: 100%;
                 text-align: center;
-                margin-top: 5px;
-            }
-
-            .search-box input {
-                width: 85px;
+                margin-top: 10px;
+                border-bottom: none;
             }
 
             .hero {
-                padding: 80px 5% 45px 5%;
+                padding: 75px 5% 45px;
             }
 
             .hero h1 {
-                font-size: 1.8rem;
+                font-size: clamp(1.8rem, 8vw, 2.3rem);
+            }
+
+            .hero p {
+                font-size: 0.95rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+                max-width: 400px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+            }
+
+            .catalog-grid,
+            .project-grid {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+            }
+
+            .catalog-card img {
+                height: 190px;
             }
 
             .estimator-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .results-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -752,387 +1007,1428 @@
                 grid-template-columns: 1fr;
             }
 
-            .form-group.full-width {
+            .form-group.full-width,
+            .btn-submit {
                 grid-column: span 1;
             }
 
-            .btn-submit {
-                grid-column: span 1;
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+        }
+
+        /* ==============================
+           SMALL PHONES
+        ============================== */
+
+        @media (max-width: 520px) {
+
+            header {
+                min-height: 60px;
+            }
+
+            .logo-container img {
+                height: 34px;
+            }
+
+            .search-box {
+                display: none;
+            }
+
+            .hero {
+                padding: 65px 5% 40px;
+            }
+
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+
+            .hero p {
+                font-size: 0.9rem;
+            }
+
+            .stat-pill {
+                width: 100%;
+                max-width: 320px;
+                text-align: center;
+            }
+
+            .container,
+            .estimator-section,
+            .projects-showcase,
+            .quote-section,
+            .local-seo-section {
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+
+            .estimator-container,
+            .quote-container {
+                padding: 23px 16px;
+            }
+
+            .catalog-card img {
+                height: 180px;
+            }
+
+            .project-card img {
+                height: 190px;
+            }
+
+            .whatsapp-float {
+                width: 54px;
+                height: 54px;
+                right: 15px;
+                bottom: 15px;
+                font-size: 27px;
+            }
+        }
+
+        /* ==============================
+           REDUCE MOTION
+        ============================== */
+
+        @media (prefers-reduced-motion: reduce) {
+
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                transition: none !important;
             }
         }
     </style>
 </head>
+
 <body>
 
-    <div id="bg-image-overlay"></div>
-    <div class="video-glow"></div>
+    <!-- Background -->
+    <div id="bg-image-overlay" aria-hidden="true"></div>
+    <div class="video-glow" aria-hidden="true"></div>
+
+    <!-- ==============================
+         HEADER
+    ============================== -->
 
     <header>
+
         <div class="logo-container">
-            <a href="index.html"><img src="logo.png" alt="Al-Sayed Logo"></a>
-        </div>
-        
-        <div class="header-right">
-            <div class="search-box">
-                <input type="text" id="searchInput" placeholder="Search...">
-                <button onclick="searchWebsite()">Go</button>
-            </div>
-            
-            <button class="menu-toggle" id="mobile-menu" onclick="toggleMenu()" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <a href="index.html" aria-label="Al-Sayed Building Materials Home">
+                <img
+                    src="logo.png"
+                    alt="Al-Sayed Building Materials logo"
+                    width="160"
+                    height="42">
+            </a>
         </div>
 
-        <nav class="nav-links" id="navLinks">
+        <div class="header-right">
+
+            <div class="search-box">
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search material..."
+                    aria-label="Search building materials">
+
+                <button type="button" onclick="searchWebsite()">
+                    Go
+                </button>
+            </div>
+
+            <button
+                class="menu-toggle"
+                id="mobile-menu"
+                onclick="toggleMenu()"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+        <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+
             <a href="index.html" class="active">Home</a>
+
             <a href="ourprojects.html">Projects</a>
+
             <a href="bricks.html">Bricks</a>
+
             <a href="cement.html">Cement</a>
+
             <a href="sand.html">Sand</a>
+
             <a href="crush.html">Crush</a>
+
             <a href="generalsupply.html">General Supply</a>
+
             <a href="contactus.html">Contact</a>
-            <a href="#quoteSection" class="btn-quote-nav">Get Quote</a>
+
+            <a href="#quoteSection" class="btn-quote-nav">
+                Get Quote
+            </a>
+
         </nav>
+
     </header>
 
+
+    <!-- ==============================
+         HERO
+    ============================== -->
+
     <section class="hero">
-        <h1>Trusted Building Materials in <span>Islamabad and Rawalpindi</span></h1>
-        <p>We deliver high-quality bricks, cement, steel, sand, and stone crush straight to your construction and housing sites across the twin cities.</p>
+
+        <h1>
+            Building Material Supplier in
+            <span>Islamabad & Rawalpindi</span>
+        </h1>
+
+        <p>
+            Al-Sayed Building Materials supplies bricks, cement, sand,
+            crush and other construction materials for residential and
+            commercial projects across Islamabad and Rawalpindi.
+        </p>
+
         <div class="hero-buttons">
-            <a href="#quoteSection" class="btn-primary">Get Quote</a>
-            <a href="#catalogSection" class="btn-secondary">Browse Materials</a>
+
+            <a href="#quoteSection" class="btn-primary">
+                Get a Material Quote
+            </a>
+
+            <a href="#catalogSection" class="btn-secondary">
+                Browse Building Materials
+            </a>
+
         </div>
 
         <div class="trust-pills">
-            <div class="stat-pill">10+ Years Supplying Twin Cities</div>
-            <div class="stat-pill">500+ Sites Supplied</div>
-            <div class="stat-pill">Islamabad & Rawalpindi Delivery</div>
+
+            <div class="stat-pill">
+                10+ Years Supplying Twin Cities
+            </div>
+
+            <div class="stat-pill">
+                500+ Sites Supplied
+            </div>
+
+            <div class="stat-pill">
+                Islamabad & Rawalpindi Delivery
+            </div>
+
         </div>
+
     </section>
 
+
+    <!-- ==============================
+         MATERIAL CATEGORIES
+    ============================== -->
+
     <main class="container" id="catalogSection">
+
         <div class="section-header">
-            <h2>Shop by Category</h2>
-            <p>Explore our premium grade construction materials with fast delivery.</p>
+
+            <h2>
+                Construction Materials We Supply
+            </h2>
+
+            <p>
+                Explore our main building material categories for
+                construction projects in Islamabad and Rawalpindi.
+            </p>
+
         </div>
 
         <div class="catalog-grid">
+
+            <!-- Bricks -->
+
             <a href="bricks.html" class="catalog-card">
-                <img src="Brick1.jpg" alt="Kiln Bricks">
+
+                <img
+                    src="Brick1.jpg"
+                    alt="Construction bricks supplier in Islamabad and Rawalpindi"
+                    width="600"
+                    height="400"
+                    loading="lazy">
+
                 <div class="catalog-info">
+
                     <h3>Bricks</h3>
-                    <span>View Inventory &rarr;</span>
+
+                    <span>
+                        View Bricks →
+                    </span>
+
                 </div>
+
             </a>
+
+
+            <!-- Cement -->
 
             <a href="cement.html" class="catalog-card">
-                <img src="cement1.jpg" alt="Cement Bags">
+
+                <img
+                    src="cement1.jpg"
+                    alt="Cement supplier in Islamabad and Rawalpindi"
+                    width="600"
+                    height="400"
+                    loading="lazy">
+
                 <div class="catalog-info">
+
                     <h3>Cement</h3>
-                    <span>View Inventory &rarr;</span>
+
+                    <span>
+                        View Cement →
+                    </span>
+
                 </div>
+
             </a>
+
+
+            <!-- Sand & Crush -->
 
             <a href="crush.html" class="catalog-card">
-                <img src="crush2.jpg" alt="Sand and Crush Piles">
+
+                <img
+                    src="crush2.jpg"
+                    alt="Construction sand and crush supplier in Islamabad and Rawalpindi"
+                    width="600"
+                    height="400"
+                    loading="lazy">
+
                 <div class="catalog-info">
+
                     <h3>Sand & Crush</h3>
-                    <span>View Inventory &rarr;</span>
+
+                    <span>
+                        View Sand & Crush →
+                    </span>
+
                 </div>
+
             </a>
 
-            <a href="generalsupply.html" class="catalog-card">
-                <img src="generalsupply1.jpg" alt="Blocks and Pipes">
+
+            <!-- PROJECTS REPLACED BLOCKS & PIPES -->
+
+            <a href="ourprojects.html" class="catalog-card">
+
+                <img
+                    src="project1.jpg"
+                    alt="Construction material supply projects in Islamabad"
+                    width="600"
+                    height="400"
+                    loading="lazy">
+
                 <div class="catalog-info">
-                    <h3>Blocks & Pipes</h3>
-                    <span>View Inventory &rarr;</span>
+
+                    <h3>Projects</h3>
+
+                    <span>
+                        View Our Projects →
+                    </span>
+
                 </div>
+
             </a>
+
         </div>
+
     </main>
 
-    <section class="estimator-section" id="estimatorSection">
-        <div class="section-header">
-            <h2>Construction Material Estimator</h2>
-            <p>Calculate approximate material requirements for your plot size and structure in Islamabad/Rawalpindi.</p>
-        </div>
-        <div class="estimator-container">
-            <div class="estimator-grid">
-                <div class="form-group">
-                    <label for="plotSize">Plot Size (Marla)</label>
-                    <input type="number" id="plotSize" placeholder="e.g., 5, 7, 10, 20" min="1" max="100" value="5">
-                </div>
-                <div class="form-group">
-                    <label for="floorsCount">Number of Floors</label>
-                    <select id="floorsCount">
-                        <option value="1">Ground Floor Only</option>
-                        <option value="2" selected>Double Storey (Ground + 1st)</option>
-                        <option value="3">Triple Storey (Ground + 2 Floors)</option>
-                    </select>
-                </div>
-            </div>
-            <button type="button" class="btn-calc" onclick="calculateMaterials()">Calculate Required Materials</button>
 
-            <div class="estimator-results" id="estimatorResults">
-                <h3>Estimated Material Breakdown</h3>
-                <div class="results-grid">
-                    <div class="result-item">
-                        <span>Total Bricks</span>
-                        <strong id="resBricks">-</strong>
-                    </div>
-                    <div class="result-item">
-                        <span>Cement Bags</span>
-                        <strong id="resCement">-</strong>
-                    </div>
-                    <div class="result-item">
-                        <span>Steel (Tons)</span>
-                        <strong id="resSteel">-</strong>
-                    </div>
-                    <div class="result-item">
-                        <span>Sand (CFT)</span>
-                        <strong id="resSand">-</strong>
-                    </div>
-                    <div class="result-item">
-                        <span>Crush (CFT)</span>
-                        <strong id="resCrush">-</strong>
-                    </div>
-                </div>
-                <p class="estimator-note">*Estimates based on standard local construction practices and structural ratios for residential usage in Islamabad & Rawalpindi.</p>
-                
-                <button type="button" class="btn-transfer" onclick="transferEstimateToQuote()">Transfer to Quote Request &rarr;</button>
-            </div>
+    <!-- ==============================
+         MATERIAL ESTIMATOR
+    ============================== -->
+
+    <section class="estimator-section" id="estimatorSection">
+
+        <div class="section-header">
+
+            <h2>
+                Construction Material Estimator
+            </h2>
+
+            <p>
+                Estimate approximate bricks, cement, steel, sand and
+                crush requirements based on plot size and number of floors.
+            </p>
+
         </div>
+
+        <div class="estimator-container">
+
+            <div class="estimator-grid">
+
+                <div class="form-group">
+
+                    <label for="plotSize">
+                        Plot Size (Marla)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="plotSize"
+                        placeholder="e.g. 5, 7, 10, 20"
+                        min="1"
+                        max="100"
+                        value="5">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="floorsCount">
+                        Number of Floors
+                    </label>
+
+                    <select id="floorsCount">
+
+                        <option value="1">
+                            Ground Floor Only
+                        </option>
+
+                        <option value="2" selected>
+                            Double Storey (Ground + 1st)
+                        </option>
+
+                        <option value="3">
+                            Triple Storey (Ground + 2 Floors)
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="btn-calc"
+                onclick="calculateMaterials()">
+
+                Calculate Required Materials
+
+            </button>
+
+
+            <div
+                class="estimator-results"
+                id="estimatorResults"
+                aria-live="polite">
+
+                <h3>
+                    Estimated Material Breakdown
+                </h3>
+
+                <div class="results-grid">
+
+                    <div class="result-item">
+
+                        <span>
+                            Total Bricks
+                        </span>
+
+                        <strong id="resBricks">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="result-item">
+
+                        <span>
+                            Cement Bags
+                        </span>
+
+                        <strong id="resCement">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="result-item">
+
+                        <span>
+                            Steel
+                        </span>
+
+                        <strong id="resSteel">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="result-item">
+
+                        <span>
+                            Sand
+                        </span>
+
+                        <strong id="resSand">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="result-item">
+
+                        <span>
+                            Crush
+                        </span>
+
+                        <strong id="resCrush">
+                            -
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <p class="estimator-note">
+                    *This is an approximate planning estimate only.
+                    Actual quantities can vary according to architectural
+                    design, structure and engineering requirements.
+                </p>
+
+
+                <button
+                    type="button"
+                    class="btn-transfer"
+                    onclick="transferEstimateToQuote()">
+
+                    Transfer Estimate to Quote →
+
+                </button>
+
+            </div>
+
+        </div>
+
     </section>
+
+
+    <!-- ==============================
+         PROJECTS
+    ============================== -->
 
     <section class="projects-showcase">
+
         <div class="section-header">
-            <h2>Recent Site Deliveries & Projects</h2>
-            <p>A quick look at our high-grade materials deployed across Islamabad & Rawalpindi sites.</p>
+
+            <h2>
+                Construction Material Projects & Deliveries
+            </h2>
+
+            <p>
+                Explore examples of building material deliveries and
+                construction supply work across Islamabad and Rawalpindi.
+            </p>
+
         </div>
+
 
         <div class="project-grid">
-            <div class="project-card">
-                <img src="bricks1.jpg" alt="High-grade brick delivery">
-                <div class="project-info">
-                    <h3>Premium Brick Stack Delivery</h3>
-                    <p>First-class kiln bricks unloaded securely for a residential structure in Islamabad.</p>
-                    <a href="bricks.html" class="card-link">View Bricks Inventory &rarr;</a>
-                </div>
-            </div>
 
-            <div class="project-card">
-                <img src="crush2.jpg" alt="Site aggregate and crush supply">
-                <div class="project-info">
-                    <h3>Margalla Crush Site Dispatch</h3>
-                    <p>Heavy dumper loads supplied for sturdy R.C.C. foundations and structural columns.</p>
-                    <a href="crush.html" class="card-link">View Crush Stock &rarr;</a>
-                </div>
-            </div>
+            <article class="project-card">
 
-            <div class="project-card">
-                <img src="cement1.jpg" alt="Bulk cement and material supply">
+                <img
+                    src="bricks1.jpg"
+                    alt="Brick delivery for residential construction project in Islamabad"
+                    width="600"
+                    height="400"
+                    loading="lazy">
+
                 <div class="project-info">
-                    <h3>Bulk Cement Provisioning</h3>
-                    <p>Fresh stock distribution coordinated seamlessly for twin-city construction clients.</p>
-                    <a href="cement.html" class="card-link">View Cement Stock &rarr;</a>
+
+                    <h3>
+                        Residential Brick Delivery
+                    </h3>
+
+                    <p>
+                        First-class kiln bricks supplied for a residential
+                        construction project in Islamabad.
+                    </p>
+
+                    <a
+                        href="bricks.html"
+                        class="card-link">
+
+                        View Bricks →
+                    </a>
+
                 </div>
-            </div>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <img
+                    src="crush2.jpg"
+                    alt="Margalla crush supply for construction site in Islamabad and Rawalpindi"
+                    width="600"
+                    height="400"
+                    loading="lazy">
+
+                <div class="project-info">
+
+                    <h3>
+                        Crush Site Supply
+                    </h3>
+
+                    <p>
+                        Construction crush supplied for foundations,
+                        concrete work and structural construction.
+                    </p>
+
+                    <a
+                        href="crush.html"
+                        class="card-link">
+
+                        View Crush →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <img
+                    src="cement1.jpg"
+                    alt="Cement supply for construction project in Rawalpindi"
+                    width="600"
+                    height="400"
+                    loading="lazy">
+
+                <div class="project-info">
+
+                    <h3>
+                        Cement Material Supply
+                    </h3>
+
+                    <p>
+                        Cement supply coordinated for construction
+                        requirements across the twin cities.
+                    </p>
+
+                    <a
+                        href="cement.html"
+                        class="card-link">
+
+                        View Cement →
+                    </a>
+
+                </div>
+
+            </article>
+
         </div>
+
+
+        <div class="projects-button-wrapper">
+
+            <a
+                href="ourprojects.html"
+                class="btn-primary">
+
+                View All Projects →
+
+            </a>
+
+        </div>
+
     </section>
+
+
+    <!-- ==============================
+         QUOTE FORM
+    ============================== -->
 
     <section class="quote-section" id="quoteSection">
+
         <div class="section-header">
-            <h2>Request a Quote</h2>
-            <p>Fill out the form below to get fast market rates and delivery estimates.</p>
+
+            <h2>
+                Request a Building Material Quote
+            </h2>
+
+            <p>
+                Tell us what material you need and where it should be
+                delivered in Islamabad or Rawalpindi.
+            </p>
+
         </div>
+
+
         <div class="quote-container">
-            <form class="quote-form" onsubmit="handleQuoteSubmit(event)">
+
+            <form
+                class="quote-form"
+                onsubmit="handleQuoteSubmit(event)">
+
                 <div class="form-group">
-                    <label for="fullName">Your Name</label>
-                    <input type="text" id="fullName" placeholder="Enter your name" required>
+
+                    <label for="fullName">
+                        Your Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        placeholder="Enter your name"
+                        autocomplete="name"
+                        required>
+
                 </div>
+
+
                 <div class="form-group">
-                    <label for="phoneNumber">Phone Number</label>
-                    <input type="tel" id="phoneNumber" placeholder="03XXXXXXXXX" required>
+
+                    <label for="phoneNumber">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phoneNumber"
+                        placeholder="03XXXXXXXXX"
+                        autocomplete="tel"
+                        required>
+
                 </div>
+
+
                 <div class="form-group">
-                    <label for="materialNeeded">Material Needed</label>
+
+                    <label for="materialNeeded">
+                        Material Needed
+                    </label>
+
                     <select id="materialNeeded">
-                        <option value="Complete Package (All Materials)">Complete Package (All Materials)</option>
-                        <option value="Bricks">Bricks</option>
-                        <option value="Cement">Cement</option>
-                        <option value="Steel">Steel</option>
-                        <option value="Sand & Crush">Sand & Crush</option>
-                        <option value="Blocks & Pipes">Blocks & Pipes</option>
-                        <option value="General Supply">General Supply</option>
+
+                        <option value="Complete Package (All Materials)">
+                            Complete Package
+                        </option>
+
+                        <option value="Bricks">
+                            Bricks
+                        </option>
+
+                        <option value="Cement">
+                            Cement
+                        </option>
+
+                        <option value="Steel">
+                            Steel
+                        </option>
+
+                        <option value="Sand & Crush">
+                            Sand & Crush
+                        </option>
+
+                        <option value="General Supply">
+                            General Supply
+                        </option>
+
                     </select>
+
                 </div>
+
+
                 <div class="form-group">
-                    <label for="quantity">Quantity / Units</label>
-                    <input type="text" id="quantity" placeholder="e.g., 10,000 bricks / 200 bags" required>
+
+                    <label for="quantity">
+                        Quantity / Units
+                    </label>
+
+                    <input
+                        type="text"
+                        id="quantity"
+                        placeholder="e.g. 10,000 bricks / 200 bags"
+                        required>
+
                 </div>
+
+
                 <div class="form-group full-width">
-                    <label for="deliveryArea">Delivery Area (Islamabad / Rawalpindi)</label>
-                    <input type="text" id="deliveryArea" placeholder="e.g., Bahria Town Phase 7, DHA Phase 2" required>
+
+                    <label for="deliveryArea">
+                        Delivery Area
+                    </label>
+
+                    <input
+                        type="text"
+                        id="deliveryArea"
+                        placeholder="e.g. Bahria Town Phase 7, DHA Phase 2"
+                        required>
+
                 </div>
-                <button type="submit" class="btn-submit">Submit Quote Request via Gmail</button>
+
+
+                <button
+                    type="submit"
+                    class="btn-submit">
+
+                    Submit Quote Request via Gmail
+
+                </button>
+
             </form>
+
         </div>
+
     </section>
+
+
+    <!-- ==============================
+         PHONE CTA
+    ============================== -->
 
     <section class="contact-action-section">
-        <p style="color: #94a3b8; margin-bottom: 5px;">Prefer to talk directly?</p>
-        <a href="tel:+923109871812" class="phone-cta-link">📞 +92 310 9871812</a>
+
+        <p style="color:#94a3b8; margin-bottom:6px;">
+            Prefer to speak directly?
+        </p>
+
+        <a
+            href="tel:+923109871812"
+            class="phone-cta-link">
+
+            📞 +92 310 9871812
+
+        </a>
+
+        <p style="color:#94a3b8;">
+            Building material supply for Islamabad & Rawalpindi
+        </p>
+
     </section>
+
+
+    <!-- ==============================
+         LOCAL SEO CONTENT
+    ============================== -->
 
     <section class="local-seo-section">
+
         <div class="local-seo-content">
-            <h2>Why Choose Al-Sayed Building Materials?</h2>
-            <p>Finding a reliable supplier in Islamabad and Rawalpindi is important to finish your building work on time. We offer fair prices, honest quantities, and fast delivery.</p>
-            <p>Whether you are building a house in Bahria Town, DHA, or anywhere in the twin cities, we supply the best sand, cement, crush, and bricks you need.</p>
+
+            <h2>
+                Building Material Supplier in Islamabad & Rawalpindi
+            </h2>
+
+            <p>
+                Al-Sayed Building Materials supplies essential construction
+                materials for residential and commercial projects across
+                Islamabad and Rawalpindi. Our main product categories include
+                construction bricks, cement, sand and stone crush.
+            </p>
+
+            <p>
+                Customers can explore our dedicated
+                <a href="bricks.html">bricks</a>,
+                <a href="cement.html">cement</a>,
+                <a href="sand.html">sand</a> and
+                <a href="crush.html">crush</a> pages to learn more about
+                the materials we supply.
+            </p>
+
+            <h3>
+                Construction Material Delivery Areas
+            </h3>
+
+            <p>
+                We serve construction sites and customers in Islamabad and
+                Rawalpindi, including areas such as Bahria Town, DHA,
+                Gulberg Greens and surrounding locations.
+            </p>
+
+            <h3>
+                Building Materials for Residential & Commercial Projects
+            </h3>
+
+            <p>
+                Whether you are constructing a house, plaza, boundary wall,
+                foundation or another building project, you can contact
+                Al-Sayed Building Materials for material requirements and
+                delivery information.
+            </p>
+
         </div>
+
     </section>
 
-    <a href="https://wa.me/923109871812" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+
+    <!-- ==============================
+         WHATSAPP
+    ============================== -->
+
+    <a
+        href="https://wa.me/923109871812"
+        class="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contact Al-Sayed Building Materials on WhatsApp">
+
         💬
+
     </a>
 
+
+    <!-- ==============================
+         FOOTER
+    ============================== -->
+
     <footer>
+
         <div class="footer-grid">
+
             <div class="footer-col">
-                <h3>Al-Sayed Building Materials</h3>
-                <p>Your trusted construction partner across Islamabad and Rawalpindi, offering high-grade materials with timely delivery.</p>
+
+                <h3>
+                    Al-Sayed Building Materials
+                </h3>
+
+                <p>
+                    Building material supplier serving Islamabad and
+                    Rawalpindi with bricks, cement, sand, crush and
+                    construction material delivery.
+                </p>
+
             </div>
+
+
             <div class="footer-col">
-                <h3>Service Areas</h3>
+
+                <h3>
+                    Service Areas
+                </h3>
+
                 <ul>
-                    <li>Islamabad (All Sectors)</li>
-                    <li>Rawalpindi</li>
-                    <li>Bahria Town (Ph 1-8)</li>
-                    <li>DHA (Phase 1 - 5)</li>
-                    <li>Gulberg Greens & Residencia</li>
+
+                    <li>
+                        Islamabad
+                    </li>
+
+                    <li>
+                        Rawalpindi
+                    </li>
+
+                    <li>
+                        Bahria Town
+                    </li>
+
+                    <li>
+                        DHA Islamabad
+                    </li>
+
+                    <li>
+                        Gulberg Greens & Residencia
+                    </li>
+
                 </ul>
+
             </div>
+
+
             <div class="footer-col">
-                <h3>Quick Links</h3>
+
+                <h3>
+                    Quick Links
+                </h3>
+
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="ourprojects.html">Projects</a></li>
-                    <li><a href="bricks.html">Bricks Inventory</a></li>
-                    <li><a href="cement.html">Cement & Steel</a></li>
-                    <li><a href="contactus.html">Contact Us</a></li>
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="ourprojects.html">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="bricks.html">
+                            Bricks
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="cement.html">
+                            Cement
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="sand.html">
+                            Sand
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="crush.html">
+                            Crush
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contactus.html">
+                            Contact Us
+                        </a>
+                    </li>
+
                 </ul>
+
             </div>
+
+
             <div class="footer-col">
-                <h3>Contact Support</h3>
-                <p><strong>Phone / WhatsApp:</strong><br>+92 310 9871812</p>
-                <p style="margin-top: 10px;"><strong>Working Hours:</strong><br>Mon - Sat: 8:00 AM - 7:00 PM</p>
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    <strong>
+                        Phone / WhatsApp:
+                    </strong>
+                    <br>
+
+                    <a
+                        href="tel:+923109871812"
+                        style="color:#38bdf8; text-decoration:none;">
+
+                        +92 310 9871812
+
+                    </a>
+                </p>
+
+                <p style="margin-top:10px;">
+
+                    <strong>
+                        Working Hours:
+                    </strong>
+
+                    <br>
+
+                    Mon - Sat: 8:00 AM - 7:00 PM
+
+                </p>
+
             </div>
+
         </div>
+
+
         <div class="footer-bottom">
-            <p>&copy; 2026 Al-Sayed Building Materials, Islamabad. All rights reserved.</p>
+
+            <p>
+                &copy; 2026 Al-Sayed Building Materials.
+                All rights reserved.
+            </p>
+
         </div>
-    </footer> 
- 
-    <script> 
+
+    </footer>
+
+
+    <!-- ==============================
+         JAVASCRIPT
+    ============================== -->
+
+    <script>
+
+        /* ==============================
+           MOBILE MENU
+        ============================== */
+
         function toggleMenu() {
-            const navLinks = document.getElementById('navLinks');
-            navLinks.classList.toggle('active');
+
+            const navLinks =
+                document.getElementById('navLinks');
+
+            const menuButton =
+                document.getElementById('mobile-menu');
+
+            const isOpen =
+                navLinks.classList.toggle('active');
+
+            menuButton.setAttribute(
+                'aria-expanded',
+                isOpen
+            );
         }
 
-        // Estimator Logic
+
+        /* Close mobile menu after clicking a link */
+
+        document.querySelectorAll('.nav-links a').forEach(function(link) {
+
+            link.addEventListener('click', function() {
+
+                const navLinks =
+                    document.getElementById('navLinks');
+
+                const menuButton =
+                    document.getElementById('mobile-menu');
+
+                navLinks.classList.remove('active');
+
+                menuButton.setAttribute(
+                    'aria-expanded',
+                    'false'
+                );
+
+            });
+
+        });
+
+
+        /* ==============================
+           MATERIAL ESTIMATOR
+        ============================== */
+
         let lastCalculation = {};
 
+
         function calculateMaterials() {
-            const plotSizeInput = document.getElementById('plotSize');
-            const floorsSelect = document.getElementById('floorsCount');
-            
-            const marlaSize = parseFloat(plotSizeInput.value) || 5;
-            const floors = parseInt(floorsSelect.value) || 2;
 
-            const sqFtPerMarla = 225; 
-            const totalBuiltUpArea = marlaSize * sqFtPerMarla * floors;
+            const plotSizeInput =
+                document.getElementById('plotSize');
 
-            const bricks = Math.round(totalBuiltUpArea * 10);
-            const cement = Math.round(totalBuiltUpArea * 0.45);
-            const steelTons = parseFloat((totalBuiltUpArea * 0.0035).toFixed(2));
-            const sandCft = Math.round(totalBuiltUpArea * 2.8);
-            const crushCft = Math.round(totalBuiltUpArea * 1.8);
+            const floorsSelect =
+                document.getElementById('floorsCount');
+
+
+            const marlaSize =
+                parseFloat(plotSizeInput.value) || 5;
+
+            const floors =
+                parseInt(floorsSelect.value) || 2;
+
+
+            const sqFtPerMarla = 225;
+
+            const totalBuiltUpArea =
+                marlaSize * sqFtPerMarla * floors;
+
+
+            const bricks =
+                Math.round(totalBuiltUpArea * 10);
+
+            const cement =
+                Math.round(totalBuiltUpArea * 0.45);
+
+            const steelTons =
+                parseFloat(
+                    (totalBuiltUpArea * 0.0035).toFixed(2)
+                );
+
+            const sandCft =
+                Math.round(totalBuiltUpArea * 2.8);
+
+            const crushCft =
+                Math.round(totalBuiltUpArea * 1.8);
+
 
             lastCalculation = {
-                bricks: bricks.toLocaleString(),
-                cement: cement.toLocaleString() + " Bags",
-                steel: steelTons + " Tons",
-                sand: sandCft.toLocaleString() + " CFT",
-                crush: crushCft.toLocaleString() + " CFT",
-                summary: `${marlaSize} Marla, ${floors} Floor(s) ~ Bricks: ${bricks.toLocaleString()}, Cement: ${cement} bags, Steel: ${steelTons} tons`
+
+                bricks:
+                    bricks.toLocaleString(),
+
+                cement:
+                    cement.toLocaleString() + " Bags",
+
+                steel:
+                    steelTons + " Tons",
+
+                sand:
+                    sandCft.toLocaleString() + " CFT",
+
+                crush:
+                    crushCft.toLocaleString() + " CFT",
+
+                summary:
+                    `${marlaSize} Marla, ${floors} Floor(s) ~ Bricks: ${bricks.toLocaleString()}, Cement: ${cement} bags, Steel: ${steelTons} tons, Sand: ${sandCft.toLocaleString()} CFT, Crush: ${crushCft.toLocaleString()} CFT`
+
             };
 
-            document.getElementById('resBricks').innerText = lastCalculation.bricks;
-            document.getElementById('resCement').innerText = lastCalculation.cement;
-            document.getElementById('resSteel').innerText = lastCalculation.steel;
-            document.getElementById('resSand').innerText = lastCalculation.sand;
-            document.getElementById('resCrush').innerText = lastCalculation.crush;
 
-            document.getElementById('estimatorResults').style.display = 'block';
+            document.getElementById('resBricks').innerText =
+                lastCalculation.bricks;
+
+            document.getElementById('resCement').innerText =
+                lastCalculation.cement;
+
+            document.getElementById('resSteel').innerText =
+                lastCalculation.steel;
+
+            document.getElementById('resSand').innerText =
+                lastCalculation.sand;
+
+            document.getElementById('resCrush').innerText =
+                lastCalculation.crush;
+
+
+            document.getElementById('estimatorResults').style.display =
+                'block';
+
         }
+
+
+        /* ==============================
+           TRANSFER ESTIMATE
+        ============================== */
 
         function transferEstimateToQuote() {
-            document.getElementById('materialNeeded').value = "Complete Package (All Materials)";
-            document.getElementById('quantity').value = lastCalculation.summary || "Estimated Package";
-            document.getElementById('quoteSection').scrollIntoView({ behavior: 'smooth' });
+
+            document.getElementById('materialNeeded').value =
+                "Complete Package (All Materials)";
+
+            document.getElementById('quantity').value =
+                lastCalculation.summary || "Estimated Package";
+
+            document.getElementById('quoteSection').scrollIntoView({
+                behavior: 'smooth'
+            });
+
         }
+
+
+        /* ==============================
+           QUOTE FORM
+        ============================== */
 
         function handleQuoteSubmit(event) {
-            event.preventDefault();
-            
-            const name = document.getElementById('fullName').value;
-            const phone = document.getElementById('phoneNumber').value;
-            const material = document.getElementById('materialNeeded').value;
-            const quantity = document.getElementById('quantity').value;
-            const area = document.getElementById('deliveryArea').value;
 
-            const ownerEmail = "marwatzeeshan316@gmail.com";
-            const emailSubject = encodeURIComponent(`New Material Order / Quote Request from ${name}`);
-            const emailBody = encodeURIComponent(
-                `Hello Al-Sayed Team,\n\nYou have received a new order inquiry from your website:\n\n` +
-                `Client Name: ${name}\n` +
-                `Phone Number: ${phone}\n` +
-                `Material Needed: ${material}\n` +
-                `Quantity / Units: ${quantity}\n` +
-                `Delivery Area: ${area}\n\nPlease reach out to the customer as soon as possible.`
+            event.preventDefault();
+
+
+            const name =
+                document.getElementById('fullName').value;
+
+            const phone =
+                document.getElementById('phoneNumber').value;
+
+            const material =
+                document.getElementById('materialNeeded').value;
+
+            const quantity =
+                document.getElementById('quantity').value;
+
+            const area =
+                document.getElementById('deliveryArea').value;
+
+
+            const ownerEmail =
+                "marwatzeeshan316@gmail.com";
+
+
+            const emailSubject =
+                encodeURIComponent(
+                    `New Material Quote Request from ${name}`
+                );
+
+
+            const emailBody =
+                encodeURIComponent(
+
+                    `Hello Al-Sayed Team,\n\n` +
+
+                    `You have received a new material quote request from your website.\n\n` +
+
+                    `Client Name: ${name}\n` +
+
+                    `Phone Number: ${phone}\n` +
+
+                    `Material Needed: ${material}\n` +
+
+                    `Quantity / Units: ${quantity}\n` +
+
+                    `Delivery Area: ${area}\n\n` +
+
+                    `Please contact the customer regarding this request.`
+
+                );
+
+
+            const gmailUrl =
+                `https://mail.google.com/mail/?view=cm&fs=1&to=${ownerEmail}&su=${emailSubject}&body=${emailBody}`;
+
+
+            window.open(
+                gmailUrl,
+                '_blank',
+                'noopener,noreferrer'
             );
 
-            const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${ownerEmail}&su=${emailSubject}&body=${emailBody}`;
-            window.open(gmailUrl, '_blank');
 
-            alert(`Thank you, ${name}! Your order details have been compiled and Gmail has opened in a new tab addressed to marwatzeeshan316@gmail.com. Just click 'Send' to dispatch it!`);
+            alert(
+                `Thank you, ${name}! Gmail has opened with your quote request. Please press Send to submit it.`
+            );
+
+
             event.target.reset();
+
         }
 
-        function searchWebsite() { 
-            let query = document.getElementById('searchInput').value.toLowerCase(); 
-            if(query.includes('brick')) { 
-                window.location.href = 'bricks.html'; 
-            } else if(query.includes('cement')) { 
-                window.location.href = 'cement.html'; 
-            } else if(query.includes('sand')) { 
-                window.location.href = 'sand.html'; 
-            } else if(query.includes('crush')) { 
-                window.location.href = 'crush.html'; 
-            } else if(query.includes('steel')) { 
-                window.location.href = 'generalsupply.html'; 
-            } else if(query.includes('project')) { 
-                window.location.href = 'ourprojects.html'; 
-            } else if(query.includes('contact')) { 
-                window.location.href = 'contactus.html'; 
-            } else { 
-                alert('Please type a material name like bricks, cement, steel, sand, or crush.'); 
-            } 
-        } 
-    </script> 
-</body> 
+
+        /* ==============================
+           WEBSITE SEARCH
+        ============================== */
+
+        function searchWebsite() {
+
+            const query =
+                document
+                    .getElementById('searchInput')
+                    .value
+                    .toLowerCase()
+                    .trim();
+
+
+            if (!query) {
+
+                alert(
+                    'Please type a material or page name.'
+                );
+
+                return;
+
+            }
+
+
+            if (
+                query.includes('brick') ||
+                query.includes('bricks')
+            ) {
+
+                window.location.href =
+                    'bricks.html';
+
+            }
+
+            else if (
+                query.includes('cement')
+            ) {
+
+                window.location.href =
+                    'cement.html';
+
+            }
+
+            else if (
+                query.includes('sand')
+            ) {
+
+                window.location.href =
+                    'sand.html';
+
+            }
+
+            else if (
+                query.includes('crush') ||
+                query.includes('bajri')
+            ) {
+
+                window.location.href =
+                    'crush.html';
+
+            }
+
+            else if (
+                query.includes('steel')
+            ) {
+
+                window.location.href =
+                    'generalsupply.html';
+
+            }
+
+            else if (
+                query.includes('project') ||
+                query.includes('projects')
+            ) {
+
+                window.location.href =
+                    'ourprojects.html';
+
+            }
+
+            else if (
+                query.includes('contact') ||
+                query.includes('phone') ||
+                query.includes('whatsapp')
+            ) {
+
+                window.location.href =
+                    'contactus.html';
+
+            }
+
+            else if (
+                query.includes('general')
+            ) {
+
+                window.location.href =
+                    'generalsupply.html';
+
+            }
+
+            else {
+
+                alert(
+                    'Try searching for bricks, cement, sand, crush, steel, projects, or contact.'
+                );
+
+            }
+
+        }
+
+
+        /* Search when Enter is pressed */
+
+        document
+            .getElementById('searchInput')
+            .addEventListener('keydown', function(event) {
+
+                if (event.key === 'Enter') {
+
+                    searchWebsite();
+
+                }
+
+            });
+
+    </script>
+
+</body>
 </html>
