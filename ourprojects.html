@@ -1,15 +1,118 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags Optimized for Islamabad & Rawalpindi -->
-    <title>Construction Projects & Material Supplies | Al-Sayed Building Materials</title>
-    <meta name="description" content="Explore recent building material supply projects by Al-Sayed Building Materials across Islamabad and Rawalpindi. Trusted suppliers of bricks, cement, sand, and crush.">
-    <meta name="keywords" content="building projects Islamabad, material supplier Rawalpindi, construction site delivery, Al-Sayed Building Materials">
-    
+
+    <!-- =========================
+         PRIMARY SEO
+    ========================== -->
+
+    <title>Construction Material Supply Projects in Islamabad & Rawalpindi | Al-Sayed</title>
+
+    <meta name="description"
+        content="See construction material supply projects and site deliveries by Al-Sayed Building Materials in Islamabad and Rawalpindi, including bricks, cement, sand and crush.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical"
+        href="https://alsayedg.github.io/ourprojects.html">
+
+
+    <!-- =========================
+         FAVICON
+    ========================== -->
+
+    <!-- Uses your existing logo.png -->
+    <link rel="icon"
+        type="image/png"
+        href="logo.png">
+
+    <link rel="apple-touch-icon"
+        href="logo.png">
+
+
+    <!-- =========================
+         OPEN GRAPH
+    ========================== -->
+
+    <meta property="og:title"
+        content="Construction Material Supply Projects | Al-Sayed Building Materials">
+
+    <meta property="og:description"
+        content="Explore construction material supply projects and deliveries by Al-Sayed Building Materials across Islamabad and Rawalpindi.">
+
+    <meta property="og:type"
+        content="website">
+
+    <meta property="og:url"
+        content="https://alsayedg.github.io/ourprojects.html">
+
+    <meta property="og:image"
+        content="https://alsayedg.github.io/project1.jpg">
+
+    <meta property="og:site_name"
+        content="Al-Sayed Building Materials">
+
+
+    <!-- =========================
+         THEME
+    ========================== -->
+
+    <meta name="theme-color"
+        content="#080e1a">
+
+
+    <!-- =========================
+         LOCAL BUSINESS SCHEMA
+    ========================== -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Al-Sayed Building Materials",
+        "description": "Building material supplier serving construction projects in Islamabad and Rawalpindi.",
+        "url": "https://alsayedg.github.io/",
+        "telephone": "+923109871812",
+        "areaServed": [
+            {
+                "@type": "City",
+                "name": "Islamabad"
+            },
+            {
+                "@type": "City",
+                "name": "Rawalpindi"
+            }
+        ]
+    }
+    </script>
+
+
+    <!-- =========================
+         WEB PAGE SCHEMA
+    ========================== -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Construction Material Supply Projects in Islamabad & Rawalpindi",
+        "url": "https://alsayedg.github.io/ourprojects.html",
+        "description": "Construction material supply projects and site deliveries by Al-Sayed Building Materials."
+    }
+    </script>
+
+
     <style>
+
+        /* =========================
+           GLOBAL
+        ========================== */
+
         * {
             margin: 0;
             padding: 0;
@@ -17,23 +120,37 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        body {
-            background-color: #080e1a; 
-            color: #f1f5f9;
-            line-height: 1.6;
+        html {
+            scroll-behavior: smooth;
         }
 
-        /* Navbar */
+        body {
+            background-color: #080e1a;
+            color: #f1f5f9;
+            line-height: 1.7;
+        }
+
+
+        /* =========================
+           NAVBAR
+        ========================== */
+
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
+
             padding: 15px 8%;
-            background: rgba(8, 14, 26, 0.95);
+
+            background: rgba(8, 14, 26, 0.97);
+
             backdrop-filter: blur(10px);
+
             position: sticky;
             top: 0;
+
             z-index: 1000;
+
             border-bottom: 2px solid #0284c7;
         }
 
@@ -51,46 +168,112 @@
 
         nav a {
             color: #cbd5e1;
+
             text-decoration: none;
+
             margin-left: 20px;
+
             font-weight: 600;
+
             transition: color 0.3s;
+
             font-size: 0.95rem;
         }
 
-        nav a:hover, nav a.active {
+        nav a:hover,
+        nav a.active {
             color: #f97316;
         }
 
+
+        /* WhatsApp Navigation Button */
+
         .btn-quote-nav {
             background-color: #f97316 !important;
+
             color: white !important;
+
             padding: 8px 18px;
+
             border-radius: 6px;
-            transition: background 0.3s, transform 0.2s !important;
+
+            transition:
+                background 0.3s,
+                transform 0.2s !important;
         }
 
         .btn-quote-nav:hover {
             background-color: #ea580c !important;
+
             transform: translateY(-2px);
         }
 
-        /* Page Banner */
+
+        /* =========================
+           BREADCRUMB
+        ========================== */
+
+        .breadcrumb {
+            max-width: 1200px;
+
+            margin: auto;
+
+            padding: 18px 8% 0;
+
+            color: #94a3b8;
+
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: #38bdf8;
+
+            text-decoration: none;
+        }
+
+
+        /* =========================
+           PAGE HERO
+        ========================== */
+
         .page-banner {
-            padding: 90px 8% 50px 8%;
+            padding: 85px 8% 55px;
+
             text-align: center;
+
             background-color: #0b1329;
-            background-image: 
-                linear-gradient(rgba(11, 19, 41, 0.92), rgba(8, 14, 26, 0.96)),
-                linear-gradient(90deg, rgba(2, 132, 199, 0.04) 1px, transparent 1px),
-                linear-gradient(0deg, rgba(2, 132, 199, 0.04) 1px, transparent 1px);
-            background-size: 100% 100%, 40px 40px, 40px 40px;
+
+            background-image:
+                linear-gradient(
+                    rgba(11, 19, 41, 0.92),
+                    rgba(8, 14, 26, 0.96)
+                ),
+                linear-gradient(
+                    90deg,
+                    rgba(2, 132, 199, 0.04) 1px,
+                    transparent 1px
+                ),
+                linear-gradient(
+                    0deg,
+                    rgba(2, 132, 199, 0.04) 1px,
+                    transparent 1px
+                );
+
+            background-size:
+                100% 100%,
+                40px 40px,
+                40px 40px;
+
             border-bottom: 1px solid #1e293b;
         }
 
         .page-banner h1 {
             font-size: 2.6rem;
-            margin-bottom: 15px;
+
+            line-height: 1.2;
+
+            margin-bottom: 18px;
+
             color: #ffffff;
         }
 
@@ -99,50 +282,115 @@
         }
 
         .page-banner p {
-            font-size: 1.1rem;
-            color: #94a3b8;
-            max-width: 750px;
+            font-size: 1.08rem;
+
+            color: #cbd5e1;
+
+            max-width: 820px;
+
             margin: 0 auto;
         }
 
-        /* Gallery Container */
+
+        /* =========================
+           INTRODUCTION
+        ========================== */
+
+        .intro-section {
+            max-width: 1100px;
+
+            margin: auto;
+
+            padding: 55px 8% 25px;
+        }
+
+        .intro-section h2 {
+            color: #ffffff;
+
+            font-size: 1.9rem;
+
+            margin-bottom: 15px;
+        }
+
+        .intro-section h2 span {
+            color: #f97316;
+        }
+
+        .intro-section p {
+            color: #cbd5e1;
+
+            margin-bottom: 15px;
+        }
+
+
+        /* =========================
+           PROJECT GALLERY
+        ========================== */
+
         .gallery-container {
-            padding: 60px 8%;
+            padding: 40px 8% 60px;
+
+            max-width: 1400px;
+
+            margin: auto;
         }
 
         .section-title {
             font-size: 1.8rem;
+
             margin-bottom: 30px;
+
             color: #ffffff;
+
             border-left: 4px solid #f97316;
+
             padding-left: 15px;
         }
 
         .photo-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+            grid-template-columns:
+                repeat(auto-fit, minmax(300px, 1fr));
+
             gap: 30px;
-            margin-bottom: 50px;
         }
 
         .photo-card {
-            background: linear-gradient(145deg, #111e38, #0f1a30);
+            background:
+                linear-gradient(
+                    145deg,
+                    #111e38,
+                    #0f1a30
+                );
+
             border-radius: 10px;
+
             overflow: hidden;
+
             border: 1px solid #1e293b;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s, border-color 0.3s;
+
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.2);
+
+            transition:
+                transform 0.3s,
+                border-color 0.3s;
         }
 
         .photo-card:hover {
             transform: translateY(-5px);
+
             border-color: #0284c7;
         }
 
         .photo-card img {
             width: 100%;
-            height: 250px;
+
+            height: 260px;
+
             object-fit: cover;
+
             display: block;
         }
 
@@ -152,136 +400,657 @@
 
         .photo-info h2 {
             color: #f97316;
+
             font-size: 1.25rem;
+
             margin-bottom: 8px;
         }
 
         .photo-info p {
             color: #94a3b8;
+
             font-size: 0.95rem;
         }
 
-        /* Footer CTA Section */
+
+        /* =========================
+           SERVICE INFORMATION
+        ========================== */
+
+        .info-section {
+            max-width: 1100px;
+
+            margin: auto;
+
+            padding: 10px 8% 50px;
+        }
+
+        .info-box {
+            background: #0d172b;
+
+            border: 1px solid #1e293b;
+
+            border-radius: 10px;
+
+            padding: 30px;
+
+            margin-bottom: 25px;
+        }
+
+        .info-box h2 {
+            color: #ffffff;
+
+            margin-bottom: 15px;
+
+            font-size: 1.6rem;
+        }
+
+        .info-box h2 span {
+            color: #f97316;
+        }
+
+        .info-box p {
+            color: #cbd5e1;
+
+            margin-bottom: 12px;
+        }
+
+        .material-links {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+
+            margin-top: 20px;
+        }
+
+        .material-links a {
+            display: inline-block;
+
+            padding: 9px 15px;
+
+            border: 1px solid #0284c7;
+
+            border-radius: 6px;
+
+            color: #38bdf8;
+
+            text-decoration: none;
+
+            font-weight: 600;
+
+            transition: 0.3s;
+        }
+
+        .material-links a:hover {
+            background: #0284c7;
+
+            color: white;
+        }
+
+
+        /* =========================
+           CTA
+        ========================== */
+
         .footer-cta {
-            padding: 60px 8%;
-            background: linear-gradient(180deg, #080e1a 0%, #050914 100%);
+            padding: 65px 8%;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    #080e1a 0%,
+                    #050914 100%
+                );
+
             text-align: center;
+
             border-top: 1px solid #1e293b;
         }
 
         .footer-cta h2 {
-            font-size: 1.8rem;
+            font-size: 1.9rem;
+
             margin-bottom: 10px;
+
             color: #ffffff;
         }
 
         .footer-cta p {
             color: #94a3b8;
+
             margin-bottom: 25px;
-            max-width: 600px;
+
+            max-width: 650px;
+
             margin-left: auto;
             margin-right: auto;
         }
 
         .btn-quote {
             display: inline-block;
+
             background-color: #25d366;
+
             color: white;
-            padding: 12px 30px;
+
+            padding: 13px 30px;
+
             border-radius: 6px;
+
             text-decoration: none;
+
             font-weight: bold;
+
             font-size: 1.05rem;
-            box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
-            transition: background 0.2s, transform 0.2s;
+
+            box-shadow:
+                0 4px 14px
+                rgba(37, 211, 102, 0.3);
+
+            transition:
+                background 0.2s,
+                transform 0.2s;
         }
 
         .btn-quote:hover {
             background-color: #20ba5a;
+
             transform: translateY(-2px);
         }
 
+
+        /* =========================
+           FOOTER
+        ========================== */
+
         footer {
             text-align: center;
+
             padding: 25px;
+
             background: #03060c;
+
             color: #64748b;
+
             border-top: 1px solid #1e293b;
+
             font-size: 0.9rem;
         }
+
+        footer a {
+            color: #38bdf8;
+
+            text-decoration: none;
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================== */
+
+        @media (max-width: 768px) {
+
+            header {
+                padding: 12px 5%;
+
+                flex-direction: column;
+
+                gap: 12px;
+            }
+
+            .nav-links {
+                justify-content: center;
+
+                gap: 8px;
+            }
+
+            nav a {
+                margin-left: 0;
+
+                font-size: 0.82rem;
+            }
+
+            .page-banner {
+                padding: 55px 6% 45px;
+            }
+
+            .page-banner h1 {
+                font-size: 2rem;
+            }
+
+            .page-banner p {
+                font-size: 1rem;
+            }
+
+            .photo-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .intro-section,
+            .gallery-container,
+            .info-section {
+                padding-left: 6%;
+                padding-right: 6%;
+            }
+
+            .photo-card img {
+                height: 230px;
+            }
+        }
+
     </style>
+
 </head>
+
+
 <body>
 
-    <!-- Header -->
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
     <header>
+
         <div class="logo-container">
-            <a href="index.html"><img src="logo.png" alt="Al-Sayed Building Materials Logo"></a>
+
+            <a href="index.html">
+
+                <img
+                    src="logo.png"
+                    alt="Al-Sayed Building Materials logo"
+                    width="150"
+                    height="50"
+                >
+
+            </a>
+
         </div>
-        <nav class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="ourprojects.html" class="active">Projects</a>
-            <a href="bricks.html">Bricks</a>
-            <a href="cement.html">Cement</a>
-            <a href="sand.html">Sand</a>
-            <a href="crush.html">Crush</a>
-            <a href="generalsupply.html">General Supply</a>
-            <a href="contactus.html">Contact</a>
-            <a href="https://wa.me/923109871812" class="btn-quote-nav" target="_blank">Get Quote</a>
+
+
+        <nav class="nav-links" aria-label="Main navigation">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a
+                href="ourprojects.html"
+                class="active"
+                aria-current="page">
+                Projects
+            </a>
+
+            <a href="bricks.html">
+                Bricks
+            </a>
+
+            <a href="cement.html">
+                Cement
+            </a>
+
+            <a href="sand.html">
+                Sand
+            </a>
+
+            <a href="crush.html">
+                Crush
+            </a>
+
+            <a href="generalsupply.html">
+                General Supply
+            </a>
+
+            <a href="contactus.html">
+                Contact
+            </a>
+
+            <a
+                href="https://wa.me/923109871812"
+                class="btn-quote-nav"
+                target="_blank"
+                rel="noopener">
+
+                Get Quote
+
+            </a>
+
         </nav>
+
     </header>
 
-    <!-- Page Banner -->
+
+
+    <!-- =========================
+         BREADCRUMB
+    ========================== -->
+
+    <div class="breadcrumb">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <span> › </span>
+
+        <span>
+            Projects
+        </span>
+
+    </div>
+
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
     <section class="page-banner">
-        <h1>Our Recent Supply <span>Projects & Deliveries</span></h1>
-        <p>Take a look at how Al-Sayed Building Materials consistently supplies high-grade bricks, sand, crush, and cement to major construction sites across Islamabad and Rawalpindi.</p>
+
+        <h1>
+            Construction Material
+            <span>Supply Projects</span>
+            in Islamabad & Rawalpindi
+        </h1>
+
+        <p>
+            Explore selected construction material supply projects and
+            site deliveries by Al-Sayed Building Materials. We supply
+            bricks, cement, sand and crush for residential and commercial
+            construction requirements across Islamabad and Rawalpindi.
+        </p>
+
     </section>
 
-    <!-- Gallery Grid Section -->
+
+
+    <!-- =========================
+         INTRODUCTION
+    ========================== -->
+
+    <section class="intro-section">
+
+        <h2>
+            Our Construction Material
+            <span>Supply Work</span>
+        </h2>
+
+        <p>
+            Al-Sayed Building Materials supplies construction materials
+            for building projects in Islamabad and Rawalpindi. Our
+            services include arranging and delivering materials according
+            to project requirements, quantity and delivery location.
+        </p>
+
+        <p>
+            This page showcases selected site deliveries and project
+            work involving construction materials such as bricks,
+            cement, sand and crush.
+        </p>
+
+        <p>
+            For current prices, availability and delivery information,
+            contact us directly before placing an order.
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================
+         PROJECT GALLERY
+    ========================== -->
+
     <main class="gallery-container">
-        <h2 class="section-title">Site Deliveries & Client Work</h2>
-        
+
+        <h2 class="section-title">
+            Recent Site Deliveries & Projects
+        </h2>
+
+
         <div class="photo-grid">
-            <!-- Project 1 -->
-            <div class="photo-card">
-                <img src="project1.jpg" alt="Site Delivery in Islamabad">
-                <div class="photo-info">
-                    <h2>Islamabad Residential Site Delivery</h2>
-                    <p>Bulk unloading of premium stamped bricks for a double-story house project in DHA Islamabad.</p>
-                </div>
-            </div>
 
-            <!-- Project 2 -->
-            <div class="photo-card">
-                <img src="project2.jpg" alt="Rawalpindi Commercial Supply">
-                <div class="photo-info">
-                    <h2>Rawalpindi Commercial Plaza Supply</h2>
-                    <p>Consistent heavy-vehicle dispatch of high-strength bricks and aggregate crush for structural frameworks.</p>
-                </div>
-            </div>
 
-            <!-- Project 3 -->
-            <div class="photo-card">
-                <img src="project3.jpg" alt="Foundation Material Stacking">
+            <!-- PROJECT 1 -->
+
+            <article class="photo-card">
+
+                <img
+                    src="project1.jpg"
+                    alt="Construction material delivery at a residential building site in Islamabad"
+                    loading="lazy"
+                    width="800"
+                    height="600"
+                >
+
                 <div class="photo-info">
-                    <h2>Foundation Material Stacking</h2>
-                    <p>Organized on-site placement of kiln bricks and fine sand to maintain seamless daily contractor workflows.</p>
+
+                    <h2>
+                        Residential Construction Site – Islamabad
+                    </h2>
+
+                    <p>
+                        Construction bricks supplied for a residential
+                        building project in Islamabad. Material delivery
+                        was arranged according to the project's supply
+                        requirements.
+                    </p>
+
                 </div>
-            </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 2 -->
+
+            <article class="photo-card">
+
+                <img
+                    src="project2.jpg"
+                    alt="Building material supply and brick delivery at a commercial construction site in Rawalpindi"
+                    loading="lazy"
+                    width="800"
+                    height="600"
+                >
+
+                <div class="photo-info">
+
+                    <h2>
+                        Commercial Construction Supply – Rawalpindi
+                    </h2>
+
+                    <p>
+                        Building materials supplied for a commercial
+                        construction project in Rawalpindi, including
+                        construction bricks and aggregate materials.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 3 -->
+
+            <article class="photo-card">
+
+                <img
+                    src="project3.jpg"
+                    alt="Bricks and sand arranged at a construction site for building work"
+                    loading="lazy"
+                    width="800"
+                    height="600"
+                >
+
+                <div class="photo-info">
+
+                    <h2>
+                        Construction Material Site Supply
+                    </h2>
+
+                    <p>
+                        Bricks and sand arranged at a construction site
+                        to support ongoing masonry and building work.
+                    </p>
+
+                </div>
+
+            </article>
+
+
         </div>
+
     </main>
 
-    <!-- Footer CTA Section -->
-    <section class="footer-cta">
-        <h2>Got an Upcoming Construction Project?</h2>
-        <p>Partner with Al-Sayed Building Materials for dependable, on-time material delivery anywhere in the twin cities.</p>
-        <a href="https://wa.me/923109871812" class="btn-quote" target="_blank">Discuss Your Project via WhatsApp</a>
+
+
+    <!-- =========================
+         MATERIAL SERVICES
+    ========================== -->
+
+    <section class="info-section">
+
+        <div class="info-box">
+
+            <h2>
+                Construction Materials We Supply
+            </h2>
+
+            <p>
+                In addition to project supply services, Al-Sayed Building
+                Materials provides several construction material
+                categories for customers in Islamabad and Rawalpindi.
+            </p>
+
+
+            <div class="material-links">
+
+                <a href="bricks.html">
+                    Bricks Supplier
+                </a>
+
+                <a href="cement.html">
+                    Cement Supplier
+                </a>
+
+                <a href="sand.html">
+                    Sand Supplier
+                </a>
+
+                <a href="crush.html">
+                    Crush Supplier
+                </a>
+
+                <a href="generalsupply.html">
+                    General Supply
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="info-box">
+
+            <h2>
+                Serving Construction Projects in Islamabad & Rawalpindi
+            </h2>
+
+            <p>
+                We serve customers requiring construction materials for
+                residential, commercial and other building projects in
+                the Islamabad and Rawalpindi area.
+            </p>
+
+            <p>
+                If you have an upcoming construction project, contact
+                us with your material requirements, estimated quantity
+                and delivery location.
+            </p>
+
+        </div>
+
     </section>
 
-    <!-- Footer -->
+
+
+    <!-- =========================
+         CTA
+    ========================== -->
+
+    <section class="footer-cta">
+
+        <h2>
+            Planning a Construction Project?
+        </h2>
+
+        <p>
+            Contact Al-Sayed Building Materials for information about
+            bricks, cement, sand, crush and construction material
+            delivery in Islamabad and Rawalpindi.
+        </p>
+
+        <a
+            href="https://wa.me/923109871812"
+            class="btn-quote"
+            target="_blank"
+            rel="noopener">
+
+            Discuss Your Project on WhatsApp
+
+        </a>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
     <footer>
-        <p>&copy; 2026 Al-Sayed Building Materials Suppliers, Islamabad. All rights reserved.</p>
+
+        <p>
+            &copy; 2026 Al-Sayed Building Materials Suppliers,
+            Islamabad. All rights reserved.
+        </p>
+
+        <p style="margin-top: 8px;">
+
+            <a href="index.html">
+                Home
+            </a>
+            |
+            <a href="bricks.html">
+                Bricks
+            </a>
+            |
+            <a href="cement.html">
+                Cement
+            </a>
+            |
+            <a href="sand.html">
+                Sand
+            </a>
+            |
+            <a href="crush.html">
+                Crush
+            </a>
+            |
+            <a href="contactus.html">
+                Contact
+            </a>
+
+        </p>
+
     </footer>
+
 
 </body>
 </html>
+```
